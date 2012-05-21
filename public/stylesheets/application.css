@@ -64,6 +64,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 /* ============================================================
     Sections
 ============================================================ */
+body, body * {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
 body {
   margin: 0 auto;
   padding: 1em 20%;
@@ -173,6 +180,10 @@ figcaption, caption {
   font-family: 'Proxima Nova Regular',sans-serif;
   text-align: left;
   caption-side: bottom;
+}
+
+figure img {
+  width: 100%;
 }
 
 /* ============================================================
@@ -307,7 +318,7 @@ td {
     Forms
 ============================================================ */
 .field {
-  width: 50%;
+  width: 100%;
   padding: 0 40px;
   border: 1px solid #eaf0a4;
   font: 1em/1.5 sans-serif;
@@ -315,15 +326,12 @@ td {
 
 label {
   display: block;
-  float: left;
   margin: 4px 0;
-  width: 20%;
   font-weight: bold;
   line-height: 1.5;
 }
 label.check {
   font-weight: normal;
-  margin-left: 20%;
   float: none;
 }
 
@@ -337,7 +345,7 @@ fieldset abbr[title="Required"] {
 }
 fieldset em {
   display: block;
-  margin: 4px 0 4px 20%;
+  margin: 4px 0 4px 0;
   color: #939393;
   font-family: sans-serif;
   font-style: normal;
@@ -348,7 +356,7 @@ fieldset.options {
   clear: left;
 }
 fieldset.options ul {
-  margin: 4px 0 4px 20%;
+  margin: 4px 0 4px 0;
   list-style: none;
 }
 fieldset.options ul li {
@@ -372,6 +380,28 @@ fieldset.options ul label {
 /* iPads (landscape) ----------- */
 /* iPads (portrait) ----------- */
 /* Desktops and laptops (CJC) ----------- */
+@media only screen and (min-width: 998px) {
+  .field {
+    width: 50%;
+  }
+
+  label {
+    display: block;
+    float: left;
+    width: 20%;
+  }
+  label.check {
+    font-weight: normal;
+    float: none;
+  }
+
+  fieldset em {
+    margin-left: 20%;
+  }
+  fieldset.options ul {
+    margin-left: 20%;
+  }
+}
 /* Desktops and laptops ----------- */
 /* Large screens ----------- */
 /* iPhone 4 ----------- */

@@ -10,9 +10,15 @@ $color_4: #131313;
 /* ============================================================
     Sections
 ============================================================ */
+
+body, body * {
+  @include box-sizing(border-box);
+//  border: 1px solid rgba(255,0,0,0.5);
+}
+
 body {
   margin: 0 auto;
-  padding : 1em 20%; /* Temporary */
+  padding: 1em 20%; /* Temporary */
   color: #fff;
   font: 100%/1.5 Cambria, Georgia, serif; /* 16px */
   -webkit-font-smoothing: antialiased;
@@ -117,6 +123,13 @@ figcaption, caption {
   text-align: left;
   caption-side: bottom;
 }
+
+figure {
+  img {
+    width: 100%;
+  }
+}
+
 
 
 /* ============================================================
@@ -234,21 +247,18 @@ td {
     Forms
 ============================================================ */
 .field {
-  width: 50%;
+  width: 100%;
   padding: 0 40px;
   border: 1px solid lighten($color_2,20%);
   font: 1em/1.5 sans-serif;
 }
 label {
   display: block;
-  float: left;
   margin: 4px 0;
-  width: 20%;
   font-weight: bold;
   line-height: 1.5;
   &.check {
     font-weight: normal;
-    margin-left: 20%;
     float: none;
   }
 }
@@ -263,7 +273,7 @@ fieldset {
   }
   em {
     display: block;
-    margin: 4px 0 4px 20%;
+    margin: 4px 0 4px 0;
     color: lighten($color_4,50%);
     font-family: sans-serif;
     font-style: normal;
@@ -273,7 +283,7 @@ fieldset {
   &.options {
     clear: left;
     ul {
-      margin: 4px 0 4px 20%;
+      margin: 4px 0 4px 0;
       list-style: none;
       li {
         margin-left: 0;
