@@ -235,7 +235,7 @@ td, th {
 th {
   padding: 8px 0 7px 0;
   border-bottom-color: lighten($color_4,20%);
-  color: #222;
+  color: $color_3;
   font: bold 14px/16px arial, sans-serif;
 }
 td {
@@ -248,7 +248,7 @@ td {
 ============================================================ */
 .field {
   width: 100%;
-  padding: 0 40px;
+  padding: 0 5px;
   border: 1px solid lighten($color_2,20%);
   font: 1em/1.5 sans-serif;
 }

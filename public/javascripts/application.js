@@ -1,5 +1,7 @@
-$(document).ready(function() {
+$(window).load(function(){
+  // $(document).ready(function() {
   
+  // iPhone Orientation fix
   if (navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPad/i)) {
     var viewportmeta = document.querySelector('meta[name="viewport"]');
     if (viewportmeta) {

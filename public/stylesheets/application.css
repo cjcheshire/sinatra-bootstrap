@@ -306,7 +306,7 @@ td, th {
 th {
   padding: 8px 0 7px 0;
   border-bottom-color: #464646;
-  color: #222;
+  color: #a15ea6;
   font: bold 14px/16px arial, sans-serif;
 }
 
@@ -319,7 +319,7 @@ td {
 ============================================================ */
 .field {
   width: 100%;
-  padding: 0 40px;
+  padding: 0 5px;
   border: 1px solid #eaf0a4;
   font: 1em/1.5 sans-serif;
 }
