@@ -12,6 +12,7 @@ GEM
     grid-coordinates (1.1.9)
       compass (>= 0.11.5)
     haml (3.1.4)
+    json (1.7.3)
     rack (1.4.1)
     rack-protection (1.2.0)
       rack
@@ -43,6 +44,7 @@ DEPENDENCIES
   compass (~> 0.11.6)
   grid-coordinates (~> 1.1.4)
   haml (~> 3.1.4)
+  json
   rake
   sass (~> 3.1.12)
   shotgun (~> 0.9)

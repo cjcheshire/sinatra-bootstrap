@@ -2,14 +2,22 @@
   @include hide-text();
 }
 
-$color_1: #474748;
-$color_2: #d5e14d;
-$color_3: #a15ea6;
-$color_4: #131313;
+$color_1: #b4d13a;
+$color_2: #056EB6;
+$color_3: #77bf47;
+$color_4: #222;
+$color_default_text: #222;
+$color_background: #fff;
+
+$heading_fontstack: "Gill Sans", "Gill Sans MT", GillSans, Calibri, "Trebuchet MS", sans-serif;
 
 /* ============================================================
     Sections
 ============================================================ */
+
+.clearfix {
+  @include clearfix;
+}
 
 body, body * {
   @include box-sizing(border-box);
@@ -18,12 +26,13 @@ body, body * {
 
 body {
   margin: 0 auto;
-  padding: 1em 20%; /* Temporary */
-  color: #fff;
-  font: 100%/1.5 Cambria, Georgia, serif; /* 16px */
+  padding: 0 2em; /* Temporary */
+  color: $color_default_text;
+  font: 100%/1.5 "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
-  background: $color_4;
+  -webkit-text-size-adjust: none;
+  background: $color_background;
 }
 
 nav { 
@@ -35,25 +44,25 @@ nav {
 h1 {
   margin: 24px 0 0 0;
   color: $color_2;
-  font: bold 46px/40px arial ,sans-serif; 
+  font: 500 3.5em/1.2em $heading_fontstack; 
   letter-spacing: -1px;
 }
 h2 {
-  margin: 40px 0 0 0;
-  padding: 11px 0 12px 0;
+  margin: 22px 0 0 0;
+  padding: 11px 0 0 0;
   color: $color_2;
-  font: bold 35px/39px arial,sans-serif;
+  font: 300 2.1em/1.1em $heading_fontstack;
   letter-spacing: -1px;
 }
 h3 {
   margin: 20px 0 0 0;
-  color: $color_3;
-  font: bold 1.125em/1.1111 arial,sans-serif;
+  color: $color_4;
+  font: 300 1.5em/1.275 $heading_fontstack;
 }
 h4, h5, h6 {
   margin: 12px 0 4px 0;
-  color: $color_3;
-  font: bold 1em/1 arial,sans-serif;
+  color: $color_4;
+  font: 300 1em/1 $heading_fontstack;
 }
 
 
@@ -86,8 +95,6 @@ hr::after {
   color: #bbb;
   letter-spacing: 1em;
 }
-
-
 
 blockquote, q {
   quotes:none;
@@ -255,7 +262,7 @@ td {
 label {
   display: block;
   margin: 4px 0;
-  font-weight: bold;
+  font-weight: 400;
   line-height: 1.5;
   &.check {
     font-weight: normal;
@@ -295,4 +302,8 @@ fieldset {
       }
     }
   }
+}
+
+#container {
+  margin: 0 auto;
 }
