@@ -11,7 +11,6 @@ GEM
     fssm (0.2.8.1)
     grid-coordinates (1.1.9)
       compass (>= 0.11.5)
-    haml (3.1.4)
     json (1.7.3)
     rack (1.4.1)
     rack-protection (1.2.0)
@@ -35,6 +34,10 @@ GEM
       tilt (~> 1.3)
     sinatra-static-assets (1.0.2)
       sinatra (>= 1.1.0)
+    slim (1.2.2)
+      temple (~> 0.4.0)
+      tilt (~> 1.3.3)
+    temple (0.4.0)
     tilt (1.3.3)
 
 PLATFORMS
@@ -43,7 +46,6 @@ PLATFORMS
 DEPENDENCIES
   compass (~> 0.11.6)
   grid-coordinates (~> 1.1.4)
-  haml (~> 3.1.4)
   json
   rake
   sass (~> 3.1.12)
@@ -51,3 +53,4 @@ DEPENDENCIES
   sinatra (~> 1.3.0)
   sinatra-contrib
   sinatra-static-assets (~> 1.0.2)
+  slim (~> 1.2.2)

@@ -4,7 +4,7 @@ require 'sinatra/content_for'
 require 'sinatra/static_assets'
 require 'sinatra/base'
 require 'sinatra/json'
-require 'haml'
+require 'slim'
 require 'json'
 
 class App < Sinatra::Base
@@ -21,7 +21,7 @@ class App < Sinatra::Base
   set :root, File.dirname(__FILE__)
   set :views, 'views'
   set :public_folder, 'public'
-  set :haml, {:format => :html5} # default Haml format is :xhtml
+  Slim::Engine.set_default_options :pretty => true
   
 
   configure do
@@ -33,11 +33,11 @@ class App < Sinatra::Base
   # Application routes
 
   get '/styles' do
-    haml :styles, :layout => :'layouts/application'
+    slim :styles, :layout => :'layouts/application'
   end
 
   get '/' do
-    haml :index, :layout => :'layouts/application'
+    slim :index, :layout => :'layouts/application'
   end
 
 end

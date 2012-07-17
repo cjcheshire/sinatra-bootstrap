@@ -4,7 +4,7 @@ gem 'rake'
 gem 'sinatra', '~> 1.3.0' 
 gem 'sinatra-contrib'
 gem 'shotgun', '~> 0.9'
-gem 'haml', '~> 3.1.4'
+gem 'slim', '~> 1.2.2'
 gem 'json'
 gem 'sinatra-static-assets', '~> 1.0.2'
 
