@@ -1,0 +1,87 @@
+$height_nav: 50px;
+
+body {
+  margin-top: $height_nav*2;
+}
+#top-header {
+  @extend .clearfix;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: $height_nav;
+  background: $color_3;
+}
+#top-nav {
+  @extend nav;
+  float: left;
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+  ul, li, a {
+    height: $height_nav;
+    line-height: $height_nav;
+  }
+  li {
+    float: left;
+    margin: 0; 
+  }
+  a {
+    float: left;
+    display: block;
+    padding: 0 1em;
+    color: #fff;
+    &:hover {
+      color: #fff;
+      background-color: lighten($color_3,20);
+    }
+  }
+}
+#account-nav {
+  @extend nav;
+  @include single-transition('background-color', 0.15s, ease-out);
+  position: relative;
+  width: 75px;
+  height: $height_nav;
+  float: right;
+  background: url(/images/nav/account.png) no-repeat 0 0;
+  &:hover {
+    cursor: pointer;
+  }
+  &:hover, &.on {
+    background-color: lighten($color_3,10);
+    background-position: 0 -50px;
+  }
+  &.on {
+   ul {
+     display: block;
+   }
+  }
+  ul {
+    z-index: 10;
+    display: none;
+    position: absolute;
+    right: 0;
+    top: $height_nav;
+    padding: 0;
+    margin: 0;
+    width: 185px;
+    background-color: lighten($color_3,10);
+    li {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+    a {
+      display: block;
+      padding: 0.5em 1em;
+      color: #fff;
+      &:hover {
+        color: #fff;
+        background-color: lighten($color_3,20);
+      }
+    }
+  }
+}

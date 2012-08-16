@@ -1,4 +1,4 @@
-/* line 17, /Users/ccheshir/.rvm/gems/ruby-1.9.2-p318@sinatra-bootstrap/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 17, ../../../../.rvm/gems/ruby-1.9.2-p318@sinatra-bootstrap/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, legend, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -10,7 +10,7 @@ fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
+menu, nav, #top-nav, #account-nav, output, ruby, section, summary,
 time, mark, audio, video {
   margin: 0;
   padding: 0;
@@ -20,50 +20,50 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 20, /Users/ccheshir/.rvm/gems/ruby-1.9.2-p318@sinatra-bootstrap/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 20, ../../../../.rvm/gems/ruby-1.9.2-p318@sinatra-bootstrap/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 body {
   line-height: 1;
 }
 
-/* line 22, /Users/ccheshir/.rvm/gems/ruby-1.9.2-p318@sinatra-bootstrap/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../.rvm/gems/ruby-1.9.2-p318@sinatra-bootstrap/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 24, /Users/ccheshir/.rvm/gems/ruby-1.9.2-p318@sinatra-bootstrap/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../.rvm/gems/ruby-1.9.2-p318@sinatra-bootstrap/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 26, /Users/ccheshir/.rvm/gems/ruby-1.9.2-p318@sinatra-bootstrap/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../.rvm/gems/ruby-1.9.2-p318@sinatra-bootstrap/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 28, /Users/ccheshir/.rvm/gems/ruby-1.9.2-p318@sinatra-bootstrap/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../.rvm/gems/ruby-1.9.2-p318@sinatra-bootstrap/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 101, /Users/ccheshir/.rvm/gems/ruby-1.9.2-p318@sinatra-bootstrap/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 101, ../../../../.rvm/gems/ruby-1.9.2-p318@sinatra-bootstrap/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 30, /Users/ccheshir/.rvm/gems/ruby-1.9.2-p318@sinatra-bootstrap/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../.rvm/gems/ruby-1.9.2-p318@sinatra-bootstrap/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 114, /Users/ccheshir/.rvm/gems/ruby-1.9.2-p318@sinatra-bootstrap/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+/* line 114, ../../../../.rvm/gems/ruby-1.9.2-p318@sinatra-bootstrap/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, #top-nav, #account-nav, section, summary {
   display: block;
 }
 
-/* line 1, /Users/ccheshir/Development/style-guide/views/stylesheets/_global.scss */
+/* line 1, ../../views/stylesheets/_global.scss */
 .hide {
   text-indent: -119988px;
   overflow: hidden;
@@ -73,13 +73,23 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 /* ============================================================
     Sections
 ============================================================ */
-/* line 26, /Users/ccheshir/Development/style-guide/views/stylesheets/_global.scss */
-.clearfix {
-  overflow: hidden;
-  *zoom: 1;
+/* line 26, ../../views/stylesheets/_global.scss */
+.clearfix:before, #top-header:before, .clearfix:after, #top-header:after {
+  content: "";
+  display: table;
 }
 
-/* line 30, /Users/ccheshir/Development/style-guide/views/stylesheets/_global.scss */
+/* line 27, ../../views/stylesheets/_global.scss */
+.clearfix:after, #top-header:after {
+  clear: both;
+}
+
+/* line 28, ../../views/stylesheets/_global.scss */
+.clearfix, #top-header {
+  zoom: 1;
+}
+
+/* line 30, ../../views/stylesheets/_global.scss */
 body, body * {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -87,7 +97,7 @@ body, body * {
   box-sizing: border-box;
 }
 
-/* line 35, /Users/ccheshir/Development/style-guide/views/stylesheets/_global.scss */
+/* line 35, ../../views/stylesheets/_global.scss */
 body {
   margin: 0 auto;
   padding: 0;
@@ -100,12 +110,12 @@ body {
   background: white;
 }
 
-/* line 47, /Users/ccheshir/Development/style-guide/views/stylesheets/_global.scss */
-nav ul {
+/* line 47, ../../views/stylesheets/_global.scss */
+nav ul, #top-nav ul, #account-nav ul {
   list-style: none;
 }
 
-/* line 52, /Users/ccheshir/Development/style-guide/views/stylesheets/_global.scss */
+/* line 52, ../../views/stylesheets/_global.scss */
 h1 {
   margin: 24px 0 0 0;
   color: #056eb6;
@@ -113,7 +123,7 @@ h1 {
   letter-spacing: -0.075em;
 }
 
-/* line 58, /Users/ccheshir/Development/style-guide/views/stylesheets/_global.scss */
+/* line 58, ../../views/stylesheets/_global.scss */
 h2, legend {
   margin: 22px 0 0 0;
   padding: 11px 0 0 0;
@@ -122,14 +132,14 @@ h2, legend {
   letter-spacing: -0.075em;
 }
 
-/* line 65, /Users/ccheshir/Development/style-guide/views/stylesheets/_global.scss */
+/* line 65, ../../views/stylesheets/_global.scss */
 h3 {
   margin: 20px 0 0 0;
   color: #222222;
   font: 300 1.5em/1.1 Cambria, Georgia, "New Century Schoolbook", "Century Schoolbook L", "Times New Roman", serif;
 }
 
-/* line 70, /Users/ccheshir/Development/style-guide/views/stylesheets/_global.scss */
+/* line 70, ../../views/stylesheets/_global.scss */
 h4, h5, h6 {
   margin: 0.9em 0 4px 0;
   color: #555555;
@@ -139,17 +149,17 @@ h4, h5, h6 {
 /* ============================================================
     Grouping content
 ============================================================ */
-/* line 80, /Users/ccheshir/Development/style-guide/views/stylesheets/_global.scss */
+/* line 80, ../../views/stylesheets/_global.scss */
 p, pre, ol, ul, dl, figure, figcaption, table, fieldset {
   margin: 0.9em 0 0.9em 0;
 }
 
-/* line 84, /Users/ccheshir/Development/style-guide/views/stylesheets/_global.scss */
+/* line 84, ../../views/stylesheets/_global.scss */
 pre {
   white-space: pre-line;
 }
 
-/* line 88, /Users/ccheshir/Development/style-guide/views/stylesheets/_global.scss */
+/* line 88, ../../views/stylesheets/_global.scss */
 hr {
   clear: both;
   display: block;
@@ -161,7 +171,7 @@ hr {
   border: 0;
 }
 
-/* line 99, /Users/ccheshir/Development/style-guide/views/stylesheets/_global.scss */
+/* line 99, ../../views/stylesheets/_global.scss */
 hr::after {
   content: "...";
   height: 0;
@@ -170,60 +180,60 @@ hr::after {
   letter-spacing: 1em;
 }
 
-/* line 107, /Users/ccheshir/Development/style-guide/views/stylesheets/_global.scss */
+/* line 107, ../../views/stylesheets/_global.scss */
 blockquote {
   color: #666666;
   border-left: 0.25em solid #cccccc;
   margin: 1.0667em 0 1.6em 0;
   padding: 0 1.6em 0 1.334em;
 }
-/* line 113, /Users/ccheshir/Development/style-guide/views/stylesheets/_global.scss */
+/* line 113, ../../views/stylesheets/_global.scss */
 blockquote p {
   line-height: 1.6;
   margin: 0.5333em 0;
 }
 
-/* line 118, /Users/ccheshir/Development/style-guide/views/stylesheets/_global.scss */
+/* line 118, ../../views/stylesheets/_global.scss */
 blockquote, q {
   quotes: none;
 }
-/* line 120, /Users/ccheshir/Development/style-guide/views/stylesheets/_global.scss */
+/* line 120, ../../views/stylesheets/_global.scss */
 blockquote:before, blockquote:after, q:before, q:after {
   content: '';
   content: none;
 }
 
-/* line 126, /Users/ccheshir/Development/style-guide/views/stylesheets/_global.scss */
+/* line 126, ../../views/stylesheets/_global.scss */
 ul {
   list-style-type: inherit;
 }
-/* line 128, /Users/ccheshir/Development/style-guide/views/stylesheets/_global.scss */
+/* line 128, ../../views/stylesheets/_global.scss */
 ul ul, ul ol {
   margin-top: 0;
 }
 
-/* line 132, /Users/ccheshir/Development/style-guide/views/stylesheets/_global.scss */
+/* line 132, ../../views/stylesheets/_global.scss */
 ol {
   list-style-type: decimal;
 }
 
-/* line 135, /Users/ccheshir/Development/style-guide/views/stylesheets/_global.scss */
+/* line 135, ../../views/stylesheets/_global.scss */
 li, dd {
   margin-left: 1.8em;
 }
 
-/* line 138, /Users/ccheshir/Development/style-guide/views/stylesheets/_global.scss */
+/* line 138, ../../views/stylesheets/_global.scss */
 li li {
   margin-top: 0;
 }
 
-/* line 141, /Users/ccheshir/Development/style-guide/views/stylesheets/_global.scss */
+/* line 141, ../../views/stylesheets/_global.scss */
 dt {
   font-family: 'Proxima Nova Bold',sans-serif;
   font-weight: bold;
 }
 
-/* line 146, /Users/ccheshir/Development/style-guide/views/stylesheets/_global.scss */
+/* line 146, ../../views/stylesheets/_global.scss */
 figcaption, caption {
   margin: 0.9em 0;
   line-height: 1em;
@@ -234,12 +244,12 @@ figcaption, caption {
   caption-side: bottom;
 }
 
-/* line 157, /Users/ccheshir/Development/style-guide/views/stylesheets/_global.scss */
+/* line 157, ../../views/stylesheets/_global.scss */
 figure img {
   width: 100%;
 }
 
-/* line 162, /Users/ccheshir/Development/style-guide/views/stylesheets/_global.scss */
+/* line 162, ../../views/stylesheets/_global.scss */
 .example {
   outline: 1px solid #EEE;
   margin: 0.9em 0 1em 0;
@@ -249,7 +259,7 @@ figure img {
 /* ============================================================
     Text-level semantics
 ============================================================ */
-/* line 172, /Users/ccheshir/Development/style-guide/views/stylesheets/_global.scss */
+/* line 172, ../../views/stylesheets/_global.scss */
 a {
   color: #056eb6;
   font-size: 100%;
@@ -257,37 +267,37 @@ a {
   text-decoration: none;
 }
 
-/* line 180, /Users/ccheshir/Development/style-guide/views/stylesheets/_global.scss */
+/* line 180, ../../views/stylesheets/_global.scss */
 .main a:hover, .main a:focus {
   color: #045084;
   border-bottom: 1px solid #045084;
 }
 
-/* line 187, /Users/ccheshir/Development/style-guide/views/stylesheets/_global.scss */
+/* line 187, ../../views/stylesheets/_global.scss */
 em, em a, i, var, samp, cite, cite a {
   font: italic 300 1em/90% "Helvetica Neue", sans-serif;
 }
 
-/* line 190, /Users/ccheshir/Development/style-guide/views/stylesheets/_global.scss */
+/* line 190, ../../views/stylesheets/_global.scss */
 strong, b {
   font-weight: 600;
 }
 
-/* line 194, /Users/ccheshir/Development/style-guide/views/stylesheets/_global.scss */
+/* line 194, ../../views/stylesheets/_global.scss */
 :lang(en-gb) > q {
   quotes: "\201C" "\201D" "\2018" "\2019";
 }
 
-/* line 198, /Users/ccheshir/Development/style-guide/views/stylesheets/_global.scss */
+/* line 198, ../../views/stylesheets/_global.scss */
 q::before {
   content: open-quote;
 }
-/* line 201, /Users/ccheshir/Development/style-guide/views/stylesheets/_global.scss */
+/* line 201, ../../views/stylesheets/_global.scss */
 q::after {
   content: close-quote;
 }
 
-/* line 206, /Users/ccheshir/Development/style-guide/views/stylesheets/_global.scss */
+/* line 206, ../../views/stylesheets/_global.scss */
 small {
   font-size: 14px;
   /* 14px */
@@ -295,18 +305,18 @@ small {
   /* 1em */
 }
 
-/* line 210, /Users/ccheshir/Development/style-guide/views/stylesheets/_global.scss */
+/* line 210, ../../views/stylesheets/_global.scss */
 dfn[title], abbr[title]:hover {
   border-bottom: 1px dotted rgba(0, 0, 0, 0.2);
   cursor: help;
 }
 
-/* line 214, /Users/ccheshir/Development/style-guide/views/stylesheets/_global.scss */
+/* line 214, ../../views/stylesheets/_global.scss */
 abbr {
   letter-spacing: 1px;
 }
 
-/* line 220, /Users/ccheshir/Development/style-guide/views/stylesheets/_global.scss */
+/* line 220, ../../views/stylesheets/_global.scss */
 time {
   color: #a2a2a2;
   font-family: arial ,sans-serif;
@@ -315,23 +325,23 @@ time {
   text-transform: uppercase;
 }
 
-/* line 227, /Users/ccheshir/Development/style-guide/views/stylesheets/_global.scss */
+/* line 227, ../../views/stylesheets/_global.scss */
 code, samp {
   font: 1em/90% Monaco, Menlo, "Courier New", Courier, monospace;
 }
 
-/* line 230, /Users/ccheshir/Development/style-guide/views/stylesheets/_global.scss */
+/* line 230, ../../views/stylesheets/_global.scss */
 code {
   color: #056eb6;
 }
 
-/* line 233, /Users/ccheshir/Development/style-guide/views/stylesheets/_global.scss */
+/* line 233, ../../views/stylesheets/_global.scss */
 .code {
   margin: 1em 0 0em 2.5em;
   font: 1em/1.714 Monaco, Menlo, "Courier New", Courier, monospace;
   color: #999;
 }
-/* line 237, /Users/ccheshir/Development/style-guide/views/stylesheets/_global.scss */
+/* line 237, ../../views/stylesheets/_global.scss */
 .code li {
   list-style: decimal-leading-zero;
   background: #F0F0F0;
@@ -339,12 +349,12 @@ code {
   border-top: 1px solid white;
   padding: 0 0.5em;
 }
-/* line 244, /Users/ccheshir/Development/style-guide/views/stylesheets/_global.scss */
+/* line 244, ../../views/stylesheets/_global.scss */
 .code .tab1 {
   padding-left: 4ex;
 }
 
-/* line 248, /Users/ccheshir/Development/style-guide/views/stylesheets/_global.scss */
+/* line 248, ../../views/stylesheets/_global.scss */
 kbd {
   margin: 0 0.4px 0;
   padding: 0.325em 0.375em;
@@ -366,14 +376,14 @@ kbd {
   background-clip: padding-box;
 }
 
-/* line 258, /Users/ccheshir/Development/style-guide/views/stylesheets/_global.scss */
+/* line 258, ../../views/stylesheets/_global.scss */
 sub {
   font-size: smaller;
   line-height: 90%;
   vertical-align: sub;
 }
 
-/* line 263, /Users/ccheshir/Development/style-guide/views/stylesheets/_global.scss */
+/* line 263, ../../views/stylesheets/_global.scss */
 sup {
   font-size: smaller;
   line-height: 90%;
@@ -383,14 +393,14 @@ sup {
 /* ============================================================
     Edits
 ============================================================ */
-/* line 272, /Users/ccheshir/Development/style-guide/views/stylesheets/_global.scss */
+/* line 272, ../../views/stylesheets/_global.scss */
 mark, ins {
   color: #222222;
   background-color: #28a4f9;
   text-decoration: none;
 }
 
-/* line 277, /Users/ccheshir/Development/style-guide/views/stylesheets/_global.scss */
+/* line 277, ../../views/stylesheets/_global.scss */
 del {
   text-decoration: line-through;
 }
@@ -398,20 +408,20 @@ del {
 /* ============================================================
     Tabular data
 ============================================================ */
-/* line 285, /Users/ccheshir/Development/style-guide/views/stylesheets/_global.scss */
+/* line 285, ../../views/stylesheets/_global.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 289, /Users/ccheshir/Development/style-guide/views/stylesheets/_global.scss */
+/* line 289, ../../views/stylesheets/_global.scss */
 td, th {
   padding: 0.5em 1.5em 0.5em 0;
   border-bottom: 1px solid #eeeeee;
   text-align: left;
 }
 
-/* line 294, /Users/ccheshir/Development/style-guide/views/stylesheets/_global.scss */
+/* line 294, ../../views/stylesheets/_global.scss */
 th {
   padding: 0.5em 0 0.44em 0;
   border-bottom-color: #eeeeee;
@@ -420,7 +430,7 @@ th {
   vertical-align: bottom;
 }
 
-/* line 301, /Users/ccheshir/Development/style-guide/views/stylesheets/_global.scss */
+/* line 301, ../../views/stylesheets/_global.scss */
 td {
   vertical-align: top;
 }
@@ -428,12 +438,12 @@ td {
 /* ============================================================
     Forms
 ============================================================ */
-/* line 309, /Users/ccheshir/Development/style-guide/views/stylesheets/_global.scss */
+/* line 309, ../../views/stylesheets/_global.scss */
 legend {
   padding-bottom: 0.5em;
 }
 
-/* line 313, /Users/ccheshir/Development/style-guide/views/stylesheets/_global.scss */
+/* line 313, ../../views/stylesheets/_global.scss */
 .field {
   width: 100%;
   padding: 0.35em 0.5em;
@@ -443,35 +453,35 @@ legend {
   font: 1em/1.5 sans-serif;
 }
 
-/* line 321, /Users/ccheshir/Development/style-guide/views/stylesheets/_global.scss */
+/* line 321, ../../views/stylesheets/_global.scss */
 label {
   display: block;
   margin: 4px 0;
   font-weight: 400;
   line-height: 1.5;
 }
-/* line 326, /Users/ccheshir/Development/style-guide/views/stylesheets/_global.scss */
+/* line 326, ../../views/stylesheets/_global.scss */
 label.check {
   font-weight: normal;
   float: none;
 }
 
-/* line 331, /Users/ccheshir/Development/style-guide/views/stylesheets/_global.scss */
+/* line 331, ../../views/stylesheets/_global.scss */
 input[type="radio"], input[type="checkbox"] {
   margin-right: 0.5em;
 }
 
-/* line 335, /Users/ccheshir/Development/style-guide/views/stylesheets/_global.scss */
+/* line 335, ../../views/stylesheets/_global.scss */
 fieldset div {
   margin: 0.9em 0;
 }
-/* line 338, /Users/ccheshir/Development/style-guide/views/stylesheets/_global.scss */
+/* line 338, ../../views/stylesheets/_global.scss */
 fieldset abbr[title="Required"] {
   color: #900;
   font: normal 20px/0.1 sans-serif;
   border-bottom: 0 none;
 }
-/* line 343, /Users/ccheshir/Development/style-guide/views/stylesheets/_global.scss */
+/* line 343, ../../views/stylesheets/_global.scss */
 fieldset em {
   display: block;
   margin: 4px 0 4px 0;
@@ -481,27 +491,27 @@ fieldset em {
   font-size: 14px;
   line-height: 1em;
 }
-/* line 352, /Users/ccheshir/Development/style-guide/views/stylesheets/_global.scss */
+/* line 352, ../../views/stylesheets/_global.scss */
 fieldset.options {
   clear: left;
 }
-/* line 354, /Users/ccheshir/Development/style-guide/views/stylesheets/_global.scss */
+/* line 354, ../../views/stylesheets/_global.scss */
 fieldset.options ul {
   margin: 4px 0 4px 0;
   list-style: none;
 }
-/* line 357, /Users/ccheshir/Development/style-guide/views/stylesheets/_global.scss */
+/* line 357, ../../views/stylesheets/_global.scss */
 fieldset.options ul li {
   margin-left: 0;
 }
-/* line 360, /Users/ccheshir/Development/style-guide/views/stylesheets/_global.scss */
+/* line 360, ../../views/stylesheets/_global.scss */
 fieldset.options ul label {
   float: none;
   width: auto;
   font-weight: normal;
 }
 
-/* line 369, /Users/ccheshir/Development/style-guide/views/stylesheets/_global.scss */
+/* line 369, ../../views/stylesheets/_global.scss */
 #container {
   margin: 0 auto;
 }
@@ -509,7 +519,7 @@ fieldset.options ul label {
 /* ============================================================
     Buttons
 ============================================================ */
-/* line 377, /Users/ccheshir/Development/style-guide/views/stylesheets/_global.scss */
+/* line 377, ../../views/stylesheets/_global.scss */
 button, input[type='submit'], input[type='button'], .button, a {
   -moz-transition-property: all 0.05s ease-in-out;
   -webkit-transition-property: all 0.05s ease-in-out;
@@ -521,7 +531,7 @@ button, input[type='submit'], input[type='button'], .button, a {
   transition-duration: 1s;
 }
 
-/* line 380, /Users/ccheshir/Development/style-guide/views/stylesheets/_global.scss */
+/* line 380, ../../views/stylesheets/_global.scss */
 button, input[type='submit'], input[type='button'], .button {
   -webkit-appearance: none;
   display: inline-block;
@@ -534,19 +544,130 @@ button, input[type='submit'], input[type='button'], .button {
   border-radius: 4px;
   box-shadow: 0 0.15em 0.25em rgba(0, 0, 0, 0.25);
 }
-/* line 391, /Users/ccheshir/Development/style-guide/views/stylesheets/_global.scss */
+/* line 391, ../../views/stylesheets/_global.scss */
 button:hover, input[type='submit']:hover, input[type='button']:hover, .button:hover {
   background: #068ce8;
 }
-/* line 394, /Users/ccheshir/Development/style-guide/views/stylesheets/_global.scss */
+/* line 394, ../../views/stylesheets/_global.scss */
 button:active, input[type='submit']:active, input[type='button']:active, .button:active {
   background: #045084;
   box-shadow: 0 0.15em 0.25em rgba(0, 0, 0, 0.25), inset 0 0.15em 0.25em rgba(0, 0, 0, 0.25);
 }
 
+/* line 3, ../../views/stylesheets/_project.scss */
+body {
+  margin-top: 100px;
+}
+
+/* line 6, ../../views/stylesheets/_project.scss */
+#top-header {
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  background: #666666;
+}
+
+/* line 16, ../../views/stylesheets/_project.scss */
+#top-nav {
+  float: left;
+}
+/* line 19, ../../views/stylesheets/_project.scss */
+#top-nav ul {
+  margin: 0;
+  padding: 0;
+}
+/* line 23, ../../views/stylesheets/_project.scss */
+#top-nav ul, #top-nav li, #top-nav a {
+  height: 50px;
+  line-height: 50px;
+}
+/* line 27, ../../views/stylesheets/_project.scss */
+#top-nav li {
+  float: left;
+  margin: 0;
+}
+/* line 31, ../../views/stylesheets/_project.scss */
+#top-nav a {
+  float: left;
+  display: block;
+  padding: 0 1em;
+  color: #fff;
+}
+/* line 36, ../../views/stylesheets/_project.scss */
+#top-nav a:hover {
+  color: #fff;
+  background-color: #999999;
+}
+
+/* line 42, ../../views/stylesheets/_project.scss */
+#account-nav {
+  -moz-transition-property: background-color;
+  -webkit-transition-property: background-color;
+  -o-transition-property: background-color;
+  transition-property: background-color;
+  -moz-transition-duration: 0.15s;
+  -webkit-transition-duration: 0.15s;
+  -o-transition-duration: 0.15s;
+  transition-duration: 0.15s;
+  -moz-transition-timing-function: ease-out;
+  -webkit-transition-timing-function: ease-out;
+  -o-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+  position: relative;
+  width: 75px;
+  height: 50px;
+  float: right;
+  background: url(/images/nav/account.png) no-repeat 0 0;
+}
+/* line 50, ../../views/stylesheets/_project.scss */
+#account-nav:hover {
+  cursor: pointer;
+}
+/* line 53, ../../views/stylesheets/_project.scss */
+#account-nav:hover, #account-nav.on {
+  background-color: gray;
+  background-position: 0 -50px;
+}
+/* line 58, ../../views/stylesheets/_project.scss */
+#account-nav.on ul {
+  display: block;
+}
+/* line 62, ../../views/stylesheets/_project.scss */
+#account-nav ul {
+  z-index: 10;
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 50px;
+  padding: 0;
+  margin: 0;
+  width: 185px;
+  background-color: gray;
+}
+/* line 72, ../../views/stylesheets/_project.scss */
+#account-nav ul li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+/* line 77, ../../views/stylesheets/_project.scss */
+#account-nav ul a {
+  display: block;
+  padding: 0.5em 1em;
+  color: #fff;
+}
+/* line 81, ../../views/stylesheets/_project.scss */
+#account-nav ul a:hover {
+  color: #fff;
+  background-color: #999999;
+}
+
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
-  /* line 5, /Users/ccheshir/Development/style-guide/views/stylesheets/_response.scss */
+  /* line 5, ../../views/stylesheets/_response.scss */
   body {
     padding-left: 1em;
     padding-right: 1em;
@@ -558,56 +679,56 @@ button:active, input[type='submit']:active, input[type='button']:active, .button
 /* iPads (landscape) ----------- */
 /* iPads (portrait) ----------- */
 @media only screen and (min-width: 481px) {
-  /* line 35, /Users/ccheshir/Development/style-guide/views/stylesheets/_response.scss */
+  /* line 35, ../../views/stylesheets/_response.scss */
   body {
     padding: 0 2em;
   }
 
-  /* line 38, /Users/ccheshir/Development/style-guide/views/stylesheets/_response.scss */
+  /* line 38, ../../views/stylesheets/_response.scss */
   .shell {
     position: relative;
     margin: 0 2em;
   }
 
-  /* line 42, /Users/ccheshir/Development/style-guide/views/stylesheets/_response.scss */
+  /* line 42, ../../views/stylesheets/_response.scss */
   .field {
     width: 50%;
   }
 
-  /* line 45, /Users/ccheshir/Development/style-guide/views/stylesheets/_response.scss */
+  /* line 45, ../../views/stylesheets/_response.scss */
   .field.small {
     width: 5em;
   }
 
-  /* line 48, /Users/ccheshir/Development/style-guide/views/stylesheets/_response.scss */
+  /* line 48, ../../views/stylesheets/_response.scss */
   .field.medium {
     width: 15em;
   }
 
-  /* line 51, /Users/ccheshir/Development/style-guide/views/stylesheets/_response.scss */
+  /* line 51, ../../views/stylesheets/_response.scss */
   .field.large {
     width: 20em;
   }
 }
 /* Desktops and laptops (CJC) ----------- */
 @media only screen and (min-width: 998px) {
-  /* line 58, /Users/ccheshir/Development/style-guide/views/stylesheets/_response.scss */
+  /* line 58, ../../views/stylesheets/_response.scss */
   label {
     display: block;
     float: left;
     width: 20%;
   }
-  /* line 62, /Users/ccheshir/Development/style-guide/views/stylesheets/_response.scss */
+  /* line 62, ../../views/stylesheets/_response.scss */
   label.check {
     font-weight: normal;
     float: none;
   }
 
-  /* line 68, /Users/ccheshir/Development/style-guide/views/stylesheets/_response.scss */
+  /* line 68, ../../views/stylesheets/_response.scss */
   fieldset em {
     margin-left: 20%;
   }
-  /* line 72, /Users/ccheshir/Development/style-guide/views/stylesheets/_response.scss */
+  /* line 72, ../../views/stylesheets/_response.scss */
   fieldset.options ul {
     margin-left: 20%;
   }
