@@ -19,13 +19,17 @@ $code_fontstack: Monaco, Menlo,'Courier New',Courier,monospace;
 
 $margin_default: 0.9em;
 
+$mobile: 400px;
+$desktop: 960px;
+$super-desktop: 998px;
+
 /* ============================================================
     Sections
 ============================================================ */
 
-.clearfix:before, .clearfix:after { content: ""; display: table; }
-.clearfix:after { clear: both; }
-.clearfix { zoom: 1; }
+.clearfix {
+  @include clearfix;
+}
 
 body, body * {
   @include box-sizing(border-box);
@@ -312,6 +316,18 @@ legend {
 }
 .field {
   width: 100%;
+  @include respond-min(480px) {
+    width: 50%;
+    &.small {
+      width: 5em;
+    }
+    &.medium {
+      width: 15em;
+    }
+    &.large {
+      width: 20em;
+    }
+  }
   padding: 0.35em 0.5em;
   background-color: lighten($color_4,88%);
   border: 1px solid lighten($color_4,60%);
@@ -323,6 +339,10 @@ label {
   margin: 4px 0;
   font-weight: 400;
   line-height: 1.5;
+  @include respond-min($super-desktop) {
+    float: left;
+    width: 20%;
+  }
   &.check {
     font-weight: normal;
     float: none;
@@ -343,6 +363,9 @@ fieldset {
   em {
     display: block;
     margin: 4px 0 4px 0;
+    @include respond-min($super-desktop) {
+      margin-left: 20%;
+    }
     color: lighten($color_4,25%);
     font-family: sans-serif;
     font-style: normal;
@@ -353,6 +376,9 @@ fieldset {
     clear: left;
     ul {
       margin: 4px 0 4px 0;
+      @include respond-min($super-desktop) {
+        margin-left: 20%;
+      }
       list-style: none;
       li {
         margin-left: 0;

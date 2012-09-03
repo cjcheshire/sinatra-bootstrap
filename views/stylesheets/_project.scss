@@ -2,9 +2,30 @@ $height_nav: 50px;
 
 body {
   margin-top: $height_nav*2;
+  @include respond-max(480px) {
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+  @include respond-min(480px) {
+    padding-left: 2em;
+    padding-right: 2em;
+  }
 }
-#top-header {
-  @extend .clearfix;
+
+.container {
+  @include respond-min($desktop) {
+    margin: 0 auto;
+    max-width: 960px;
+  }
+}
+
+/* 
+
+top nav 
+
+*/
+
+#top-nav {
   position: fixed;
   z-index: 2;
   top: 0;
@@ -13,40 +34,14 @@ body {
   height: $height_nav;
   background: $color_3;
 }
-#top-nav {
-  @extend nav;
-  float: left;
-  ul {
-    margin: 0;
-    padding: 0;
-  }
-  ul, li, a {
-    height: $height_nav;
-    line-height: $height_nav;
-  }
-  li {
-    float: left;
-    margin: 0; 
-  }
-  a {
-    float: left;
-    display: block;
-    padding: 0 1em;
-    color: #fff;
-    &:hover {
-      color: #fff;
-      background-color: lighten($color_3,20);
-    }
-  }
-}
 #account-nav {
   @extend nav;
   @include single-transition('background-color', 0.15s, ease-out);
   position: relative;
   width: 75px;
-  height: $height_nav;
+  height: 50px;
   float: right;
-  background: url(/images/nav/account.png) no-repeat 0 0;
+  background: image-url("nav/account.png") no-repeat 0 0;
   &:hover {
     cursor: pointer;
   }
@@ -64,7 +59,7 @@ body {
     display: none;
     position: absolute;
     right: 0;
-    top: $height_nav;
+    top: 50px;
     padding: 0;
     margin: 0;
     width: 185px;

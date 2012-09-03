@@ -10,6 +10,8 @@ Sinatra Bootstrap supports:
 * [jQuery](http://jquery.com/)
 * [Modernizr](http://www.modernizr.com/)
 
+Implements Jake Archibald's IE [SASS IE](http://jakearchibald.github.com/sass-ie/ "Visit Jake's ReadMe")
+
 ## What's this for?
 
 A consistent starting point for my projects. Slim, Sass and Compass are the building blocks of any prototype... A number of helpful rake tasks have also been included.

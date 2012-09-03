@@ -9,8 +9,8 @@ gem 'json'
 gem 'sinatra-static-assets', '~> 1.0.2'
 
 # Sass & Compass
-gem 'sass', '~> 3.1.12'
-gem 'compass', '~> 0.11.6'
+gem 'sass', '~> 3.2.1'
+gem 'compass', '~> 0.12.2'
 
 # Sass libraries
 gem 'grid-coordinates', '~> 1.1.4'
