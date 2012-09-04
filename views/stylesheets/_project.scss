@@ -67,7 +67,7 @@ top nav
   width: 75px;
   height: $height_nav;
   float: right;
-  background: url(/images/nav/account.png) no-repeat 0 0;
+  background: image-url("nav/account.png") no-repeat 0 0;
   &:hover {
     cursor: pointer;
   }
