@@ -2,20 +2,20 @@ $height_nav: 50px;
 
 body {
   margin-top: $height_nav*2;
-  @include respond-max(480px) {
-    padding-left: 1em;
-    padding-right: 1em;
+  @include respond-max(em(480px)) {
+    padding-left: em(16px);
+    padding-right: em(16px);
   }
-  @include respond-min(480px) {
-    padding-left: 2em;
-    padding-right: 2em;
+  @include respond-min(em(480px)) {
+    padding-left: em(32px);
+    padding-right: em(32px);
   }
 }
 
 .container {
   @include respond-min($desktop) {
     margin: 0 auto;
-    max-width: 960px;
+    max-width: em(960px);
   }
 }
 
@@ -52,7 +52,7 @@ top nav
   a {
     float: left;
     display: block;
-    padding: 0 1em;
+    padding: 0 em(16px);
     color: #fff;
     &:hover {
       color: #fff;
@@ -64,7 +64,7 @@ top nav
   @extend nav;
   @include single-transition('background-color', 0.15s, ease-out);
   position: relative;
-  width: 75px;
+  width: em(75px);
   height: $height_nav;
   float: right;
   background: image-url("nav/account.png") no-repeat 0 0;
@@ -88,7 +88,7 @@ top nav
     top: $height_nav;
     padding: 0;
     margin: 0;
-    width: 185px;
+    width: em(185px);
     background-color: lighten($color_3,10);
     li {
       margin: 0;
@@ -97,7 +97,7 @@ top nav
     }
     a {
       display: block;
-      padding: 0.5em 1em;
+      padding: em(8px) em(16px);
       color: #fff;
       &:hover {
         color: #fff;

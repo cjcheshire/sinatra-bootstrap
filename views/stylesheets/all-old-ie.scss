@@ -1,3 +1,4 @@
+@import "vars";
 $old-ie: true;
-$fix-mqs: 980px;
+$fix-mqs: $desktop;
 @import 'application';

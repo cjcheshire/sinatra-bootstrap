@@ -50,3 +50,15 @@ $old-ie: false !default;
     filter: fliph; /*IE*/
   }
 }
+
+@mixin min-height($height) { 
+  min-height: $height;
+  height: auto !important;
+  height: $height; 
+} 
+
+@function em($target, $context: $font-base) {
+   @if $target == 0 { @return 0 }
+   @return $target / $context + 0em;
+}
+
