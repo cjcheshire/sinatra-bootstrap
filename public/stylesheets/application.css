@@ -110,38 +110,12 @@ body {
   background: white;
 }
 
-/* line 39, ../../views/stylesheets/_global.scss */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-nav,
-#top-nav,
-#account-nav,
-section,
-summary {
-  display: block;
-}
-
-/* line 44, ../../views/stylesheets/_global.scss */
-audio,
-canvas,
-video {
-  display: inline-block;
-  *display: inline;
-  *zoom: 1;
-}
-
-/* line 51, ../../views/stylesheets/_global.scss */
+/* line 30, ../../views/stylesheets/_global.scss */
 nav ul, #top-nav ul, #account-nav ul {
   list-style: none;
 }
 
-/* line 56, ../../views/stylesheets/_global.scss */
+/* line 35, ../../views/stylesheets/_global.scss */
 h1 {
   margin: 1.5em 0 0 0;
   color: #056eb6;
@@ -149,7 +123,7 @@ h1 {
   letter-spacing: -0.075em;
 }
 
-/* line 62, ../../views/stylesheets/_global.scss */
+/* line 41, ../../views/stylesheets/_global.scss */
 h2, legend {
   margin: 0.75em 0 0 0;
   padding: 11px 0 0 0;
@@ -158,14 +132,14 @@ h2, legend {
   letter-spacing: -0.075em;
 }
 
-/* line 69, ../../views/stylesheets/_global.scss */
+/* line 48, ../../views/stylesheets/_global.scss */
 h3 {
   margin: 1.25em 0 0 0;
   color: #222222;
   font: 300 1.5em/1.0625em Corbel, Arial, Helvetica, "Nimbus Sans L", "Liberation Sans", sans-serif;
 }
 
-/* line 74, ../../views/stylesheets/_global.scss */
+/* line 53, ../../views/stylesheets/_global.scss */
 h4, h5, h6 {
   margin: 0.9em 0 4px 0;
   color: #555555;
@@ -175,17 +149,17 @@ h4, h5, h6 {
 /* ============================================================
     Grouping content
 ============================================================ */
-/* line 84, ../../views/stylesheets/_global.scss */
+/* line 63, ../../views/stylesheets/_global.scss */
 p, pre, ol, ul, dl, figure, figcaption, table, fieldset {
   margin: 0.9em 0 0.9em 0;
 }
 
-/* line 88, ../../views/stylesheets/_global.scss */
+/* line 67, ../../views/stylesheets/_global.scss */
 pre {
   white-space: pre-line;
 }
 
-/* line 92, ../../views/stylesheets/_global.scss */
+/* line 71, ../../views/stylesheets/_global.scss */
 hr {
   clear: both;
   display: block;
@@ -197,7 +171,7 @@ hr {
   border: 0;
 }
 
-/* line 103, ../../views/stylesheets/_global.scss */
+/* line 82, ../../views/stylesheets/_global.scss */
 hr::after {
   content: "...";
   height: 0;
@@ -206,60 +180,60 @@ hr::after {
   letter-spacing: 1em;
 }
 
-/* line 111, ../../views/stylesheets/_global.scss */
+/* line 90, ../../views/stylesheets/_global.scss */
 blockquote {
   color: #666666;
   border-left: 0.25em solid #cccccc;
   margin: 1.0625em 0 1.5625em 0;
   padding: 0 1.5625em 0 1.334em;
 }
-/* line 117, ../../views/stylesheets/_global.scss */
+/* line 96, ../../views/stylesheets/_global.scss */
 blockquote p {
   line-height: 1.6;
   margin: 0.5625em 0;
 }
 
-/* line 122, ../../views/stylesheets/_global.scss */
+/* line 101, ../../views/stylesheets/_global.scss */
 blockquote, q {
   quotes: none;
 }
-/* line 124, ../../views/stylesheets/_global.scss */
+/* line 103, ../../views/stylesheets/_global.scss */
 blockquote:before, blockquote:after, q:before, q:after {
   content: '';
   content: none;
 }
 
-/* line 130, ../../views/stylesheets/_global.scss */
+/* line 109, ../../views/stylesheets/_global.scss */
 ul {
   list-style-type: inherit;
 }
-/* line 132, ../../views/stylesheets/_global.scss */
+/* line 111, ../../views/stylesheets/_global.scss */
 ul ul, ul ol {
   margin-top: 0;
 }
 
-/* line 136, ../../views/stylesheets/_global.scss */
+/* line 115, ../../views/stylesheets/_global.scss */
 ol {
   list-style-type: decimal;
 }
 
-/* line 139, ../../views/stylesheets/_global.scss */
+/* line 118, ../../views/stylesheets/_global.scss */
 li, dd {
   margin-left: 1.8125em;
 }
 
-/* line 142, ../../views/stylesheets/_global.scss */
+/* line 121, ../../views/stylesheets/_global.scss */
 li li {
   margin-top: 0;
 }
 
-/* line 145, ../../views/stylesheets/_global.scss */
+/* line 124, ../../views/stylesheets/_global.scss */
 dt {
   font-family: 'Proxima Nova Bold',sans-serif;
   font-weight: bold;
 }
 
-/* line 150, ../../views/stylesheets/_global.scss */
+/* line 129, ../../views/stylesheets/_global.scss */
 figcaption, caption {
   margin: 0.9em 0;
   line-height: 1em;
@@ -270,12 +244,12 @@ figcaption, caption {
   caption-side: bottom;
 }
 
-/* line 161, ../../views/stylesheets/_global.scss */
+/* line 140, ../../views/stylesheets/_global.scss */
 figure img {
   width: 100%;
 }
 
-/* line 166, ../../views/stylesheets/_global.scss */
+/* line 145, ../../views/stylesheets/_global.scss */
 .example {
   outline: 1px solid #EEE;
   margin: 0.9em 0 1em 0;
@@ -285,7 +259,7 @@ figure img {
 /* ============================================================
     Text-level semantics
 ============================================================ */
-/* line 176, ../../views/stylesheets/_global.scss */
+/* line 155, ../../views/stylesheets/_global.scss */
 a {
   color: #056eb6;
   font-size: 100%;
@@ -293,37 +267,37 @@ a {
   text-decoration: none;
 }
 
-/* line 184, ../../views/stylesheets/_global.scss */
+/* line 163, ../../views/stylesheets/_global.scss */
 .main a:hover, .main a:focus {
   color: #045084;
   border-bottom: 1px solid #045084;
 }
 
-/* line 191, ../../views/stylesheets/_global.scss */
+/* line 170, ../../views/stylesheets/_global.scss */
 em, em a, i, var, samp, cite, cite a {
   font: italic 300 1em/90% "Helvetica Neue", sans-serif;
 }
 
-/* line 194, ../../views/stylesheets/_global.scss */
+/* line 173, ../../views/stylesheets/_global.scss */
 strong, b {
   font-weight: 600;
 }
 
-/* line 198, ../../views/stylesheets/_global.scss */
+/* line 177, ../../views/stylesheets/_global.scss */
 :lang(en-gb) > q {
   quotes: "\201C" "\201D" "\2018" "\2019";
 }
 
-/* line 202, ../../views/stylesheets/_global.scss */
+/* line 181, ../../views/stylesheets/_global.scss */
 q::before {
   content: open-quote;
 }
-/* line 205, ../../views/stylesheets/_global.scss */
+/* line 184, ../../views/stylesheets/_global.scss */
 q::after {
   content: close-quote;
 }
 
-/* line 210, ../../views/stylesheets/_global.scss */
+/* line 189, ../../views/stylesheets/_global.scss */
 small {
   font-size: 0.875em;
   /* 14px */
@@ -331,18 +305,18 @@ small {
   /* em(16px) */
 }
 
-/* line 214, ../../views/stylesheets/_global.scss */
+/* line 193, ../../views/stylesheets/_global.scss */
 dfn[title], abbr[title]:hover {
   border-bottom: 1px dotted rgba(0, 0, 0, 0.2);
   cursor: help;
 }
 
-/* line 218, ../../views/stylesheets/_global.scss */
+/* line 197, ../../views/stylesheets/_global.scss */
 abbr {
   letter-spacing: 1px;
 }
 
-/* line 224, ../../views/stylesheets/_global.scss */
+/* line 203, ../../views/stylesheets/_global.scss */
 time {
   color: #a2a2a2;
   font-family: arial ,sans-serif;
@@ -351,23 +325,23 @@ time {
   text-transform: uppercase;
 }
 
-/* line 231, ../../views/stylesheets/_global.scss */
+/* line 210, ../../views/stylesheets/_global.scss */
 code, samp {
   font: 1em/90% Monaco, Menlo, "Courier New", Courier, monospace;
 }
 
-/* line 234, ../../views/stylesheets/_global.scss */
+/* line 213, ../../views/stylesheets/_global.scss */
 code {
   color: #056eb6;
 }
 
-/* line 237, ../../views/stylesheets/_global.scss */
+/* line 216, ../../views/stylesheets/_global.scss */
 .code {
   margin: 1em 0 0 2.5em;
   font: 1em/1.7143 Monaco, Menlo, "Courier New", Courier, monospace;
   color: #999;
 }
-/* line 241, ../../views/stylesheets/_global.scss */
+/* line 220, ../../views/stylesheets/_global.scss */
 .code li {
   list-style: decimal-leading-zero;
   background: #F0F0F0;
@@ -375,12 +349,12 @@ code {
   border-top: 1px solid white;
   padding: 0 0.5em;
 }
-/* line 248, ../../views/stylesheets/_global.scss */
+/* line 227, ../../views/stylesheets/_global.scss */
 .code .tab1 {
   padding-left: 4ex;
 }
 
-/* line 252, ../../views/stylesheets/_global.scss */
+/* line 231, ../../views/stylesheets/_global.scss */
 kbd {
   margin: 0 0.4px 0;
   padding: 0.3125em 0.375em;
@@ -398,14 +372,14 @@ kbd {
   background-clip: padding-box;
 }
 
-/* line 262, ../../views/stylesheets/_global.scss */
+/* line 241, ../../views/stylesheets/_global.scss */
 sub {
   font-size: smaller;
   line-height: 90%;
   vertical-align: sub;
 }
 
-/* line 267, ../../views/stylesheets/_global.scss */
+/* line 246, ../../views/stylesheets/_global.scss */
 sup {
   font-size: smaller;
   line-height: 90%;
@@ -415,14 +389,14 @@ sup {
 /* ============================================================
     Edits
 ============================================================ */
-/* line 276, ../../views/stylesheets/_global.scss */
+/* line 255, ../../views/stylesheets/_global.scss */
 mark, ins {
   color: #222222;
   background-color: #28a4f9;
   text-decoration: none;
 }
 
-/* line 281, ../../views/stylesheets/_global.scss */
+/* line 260, ../../views/stylesheets/_global.scss */
 del {
   text-decoration: line-through;
 }
@@ -430,20 +404,20 @@ del {
 /* ============================================================
     Tabular data
 ============================================================ */
-/* line 289, ../../views/stylesheets/_global.scss */
+/* line 268, ../../views/stylesheets/_global.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 293, ../../views/stylesheets/_global.scss */
+/* line 272, ../../views/stylesheets/_global.scss */
 td, th {
   padding: 0.5em 1.5625em 0.5em 0;
   border-bottom: 1px solid #eeeeee;
   text-align: left;
 }
 
-/* line 298, ../../views/stylesheets/_global.scss */
+/* line 277, ../../views/stylesheets/_global.scss */
 th {
   padding: 0.5em 0 0.4375em 0;
   border-bottom-color: #eeeeee;
@@ -452,7 +426,7 @@ th {
   vertical-align: bottom;
 }
 
-/* line 305, ../../views/stylesheets/_global.scss */
+/* line 284, ../../views/stylesheets/_global.scss */
 td {
   vertical-align: top;
 }
@@ -460,12 +434,12 @@ td {
 /* ============================================================
     Forms
 ============================================================ */
-/* line 314, ../../views/stylesheets/_global.scss */
+/* line 293, ../../views/stylesheets/_global.scss */
 legend {
   padding-bottom: 0.5em;
 }
 
-/* line 318, ../../views/stylesheets/_global.scss */
+/* line 297, ../../views/stylesheets/_global.scss */
 .field {
   width: 100%;
   padding: 0.375em 0.5em;
@@ -475,25 +449,25 @@ legend {
   font: 1em/1.5em sans-serif;
 }
 @media screen and (min-width: 30em) {
-  /* line 318, ../../views/stylesheets/_global.scss */
+  /* line 297, ../../views/stylesheets/_global.scss */
   .field {
     width: 50%;
   }
-  /* line 322, ../../views/stylesheets/_global.scss */
+  /* line 301, ../../views/stylesheets/_global.scss */
   .field.small {
     width: 5em;
   }
-  /* line 325, ../../views/stylesheets/_global.scss */
+  /* line 304, ../../views/stylesheets/_global.scss */
   .field.medium {
     width: 15em;
   }
-  /* line 328, ../../views/stylesheets/_global.scss */
+  /* line 307, ../../views/stylesheets/_global.scss */
   .field.large {
     width: 20em;
   }
 }
 
-/* line 338, ../../views/stylesheets/_global.scss */
+/* line 317, ../../views/stylesheets/_global.scss */
 label {
   display: block;
   margin: 0.25em 0;
@@ -501,34 +475,34 @@ label {
   line-height: 1.5;
 }
 @media screen and (min-width: 62.375em) {
-  /* line 338, ../../views/stylesheets/_global.scss */
+  /* line 317, ../../views/stylesheets/_global.scss */
   label {
     float: left;
     width: 20%;
   }
 }
-/* line 347, ../../views/stylesheets/_global.scss */
+/* line 326, ../../views/stylesheets/_global.scss */
 label.check {
   font-weight: normal;
   float: none;
 }
 
-/* line 352, ../../views/stylesheets/_global.scss */
+/* line 331, ../../views/stylesheets/_global.scss */
 input[type="radio"], input[type="checkbox"] {
   margin-right: 0.5em;
 }
 
-/* line 356, ../../views/stylesheets/_global.scss */
+/* line 335, ../../views/stylesheets/_global.scss */
 fieldset div {
   margin: 0.9em 0;
 }
-/* line 359, ../../views/stylesheets/_global.scss */
+/* line 338, ../../views/stylesheets/_global.scss */
 fieldset abbr[title="Required"] {
   color: #900;
   font: normal 1.25em/0.1 sans-serif;
   border-bottom: 0 none;
 }
-/* line 364, ../../views/stylesheets/_global.scss */
+/* line 343, ../../views/stylesheets/_global.scss */
 fieldset em {
   display: block;
   margin: 0.25em 0;
@@ -539,43 +513,43 @@ fieldset em {
   line-height: 1em;
 }
 @media screen and (min-width: 62.375em) {
-  /* line 364, ../../views/stylesheets/_global.scss */
+  /* line 343, ../../views/stylesheets/_global.scss */
   fieldset em {
     margin-left: 20%;
   }
 }
-/* line 376, ../../views/stylesheets/_global.scss */
+/* line 355, ../../views/stylesheets/_global.scss */
 fieldset.options {
   clear: left;
 }
-/* line 378, ../../views/stylesheets/_global.scss */
+/* line 357, ../../views/stylesheets/_global.scss */
 fieldset.options ul {
   margin: 0.25em 0;
   list-style: none;
 }
 @media screen and (min-width: 62.375em) {
-  /* line 378, ../../views/stylesheets/_global.scss */
+  /* line 357, ../../views/stylesheets/_global.scss */
   fieldset.options ul {
     margin-left: 20%;
   }
 }
-/* line 384, ../../views/stylesheets/_global.scss */
+/* line 363, ../../views/stylesheets/_global.scss */
 fieldset.options ul li {
   margin-left: 0;
 }
-/* line 387, ../../views/stylesheets/_global.scss */
+/* line 366, ../../views/stylesheets/_global.scss */
 fieldset.options ul label {
   float: none;
   width: auto;
   font-weight: normal;
 }
 
-/* line 395, ../../views/stylesheets/_global.scss */
+/* line 374, ../../views/stylesheets/_global.scss */
 .submit {
   padding: 0.9em 0 0 0;
 }
 
-/* line 399, ../../views/stylesheets/_global.scss */
+/* line 378, ../../views/stylesheets/_global.scss */
 #container {
   margin: 0 auto;
 }
@@ -583,7 +557,7 @@ fieldset.options ul label {
 /* ============================================================
     Buttons
 ============================================================ */
-/* line 407, ../../views/stylesheets/_global.scss */
+/* line 386, ../../views/stylesheets/_global.scss */
 button, input[type='submit'], input[type='button'], .button, a {
   -webkit-transition: all 0.05s ease-in-out, 1s;
   -moz-transition: all 0.05s ease-in-out, 1s;
@@ -591,7 +565,7 @@ button, input[type='submit'], input[type='button'], .button, a {
   transition: all 0.05s ease-in-out, 1s;
 }
 
-/* line 410, ../../views/stylesheets/_global.scss */
+/* line 389, ../../views/stylesheets/_global.scss */
 button, input[type='submit'], input[type='button'], .button {
   -webkit-appearance: none;
   display: inline-block;
@@ -604,11 +578,11 @@ button, input[type='submit'], input[type='button'], .button {
   border-radius: 4px;
   box-shadow: 0 0.125em 0.25em rgba(0, 0, 0, 0.25);
 }
-/* line 421, ../../views/stylesheets/_global.scss */
+/* line 400, ../../views/stylesheets/_global.scss */
 button:hover, input[type='submit']:hover, input[type='button']:hover, .button:hover {
   background: #068ce8;
 }
-/* line 424, ../../views/stylesheets/_global.scss */
+/* line 403, ../../views/stylesheets/_global.scss */
 button:active, input[type='submit']:active, input[type='button']:active, .button:active {
   background: #045084;
   box-shadow: 0 0.125em 0.25em rgba(0, 0, 0, 0.25), inset 0 0.125em 0.25em rgba(0, 0, 0, 0.25);
