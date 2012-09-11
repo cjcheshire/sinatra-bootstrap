@@ -13,6 +13,7 @@ body {
 }
 
 .container {
+  position: relative;
   @include respond-min($desktop) {
     margin: 0 auto;
     max-width: em(960px);
