@@ -19,7 +19,7 @@ body {
   margin: 0 auto;
   padding: 0; /* Temporary */
   color: $color_default_text;
-  font: #{$font-base}/1.5 $para_fontstack;
+  font: #{$font-base}/lh(1) $para_fontstack;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
   -webkit-text-size-adjust: none;
