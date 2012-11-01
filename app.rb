@@ -33,7 +33,7 @@ class App < Sinatra::Base
   # Application routes
 
   get '/styles' do
-    slim :styles, :layout => :'layouts/application'
+    slim :index, :layout => :'layouts/application'
   end
 
   get '/' do
