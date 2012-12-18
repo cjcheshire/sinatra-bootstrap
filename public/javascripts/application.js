@@ -35,6 +35,15 @@ $(document).ready(function() {
         $(this).toggleClass('on', 'on');
     }
 
+    function toggleGuide(event) {
+      event.preventDefault();
+      $('body').toggleClass('guide', 'guide');
+    }
+    $('#guide').click(function(event) {
+      toggleGuide(event);
+    });
+  
+
     $('#account-nav').click(openCloseAccountNav);
 
 });

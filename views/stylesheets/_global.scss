@@ -19,11 +19,14 @@ body {
   margin: 0 auto;
   padding: 0; /* Temporary */
   color: $color_default_text;
-  font: #{$font-base}/lh(1) $para_fontstack;
+  font: #{$font_base}/lh(1) $para_fontstack;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
   -webkit-text-size-adjust: 100%;
   background: $color_background;
+  &.guide {
+    background: $color_background image-url("line-25.png") repeat;    
+  }
 }
 
 nav { 
@@ -33,27 +36,32 @@ nav {
 }
 
 h1 {
-  margin: em(24px) 0 0 0;
-  color: $color_2;
-  font: 500 #{em(60px)}/#{em(19px)} $heading_fontstack; 
-  letter-spacing: -0.075em;
+  $font_size: 42px;
+  margin: 0 0 em(28px,$font_size) 0;
+  color: $color_4;
+  font: bold #{em($font_size)}/#{90%} $heading_fontstack; 
+//  letter-spacing: -0.075em;
 }
 h2 {
-  margin: em(12px) 0 0 0;
-  padding: 11px 0 0 0;
-  color: $color_2;
-  font: 300 #{em(36px)}/#{em(19px)} $heading_fontstack;
-  letter-spacing: -0.075em;
+  $font_size: 30px;
+  margin: 0 0 em(15px, $font_size) 0;
+  padding: 25px 0 0 0;
+  color: $color_4;
+  font: 300 #{em($font_size)}/#{103%} $heading_fontstack;
+//  letter-spacing: -0.05em;
 }
 h3 {
-  margin: em(20px) 0 0 0;
-  color: $color_4;
-  font: 300 #{em(24px)}/#{em(17px)} $heading_fontstack;
+  $font_size: 26px;
+  margin: 0 0 em(10px, $font_size) 0;
+  padding: em(13px, $font_size) 0 0 0;
+  color: lighten($color_4,10%);
+  font: 300 #{em($font_size)}/#{106%} $heading_fontstack;
 }
 h4, h5, h6 {
-  margin: $margin_default 0 4px 0;
-  color: lighten($color_4,20%);
-  font: 300 #{em(18px)}/#{em(16px)} $heading_fontstack;
+  $font_size: 21px;
+  margin: 0 0 em(8px, $font_size) 0;
+  color: lighten($color_4,5%);
+  font: 300 #{em($font_size)}/#{110%} $heading_fontstack;
 }
 
 
@@ -61,7 +69,7 @@ h4, h5, h6 {
     Grouping content
 ============================================================ */
 p, pre, ol, ul, dl, figure, figcaption, table, fieldset {
-  margin: $margin_default 0 $margin_default 0;
+  margin: 0 0 em(15px) 0;
 }
 
 pre {
@@ -75,7 +83,7 @@ hr {
   padding: 0;
   font: 600 #{em(30px)}/#{em(16px)} 'Akagi SemiBold', 'Helvetica Neue', Arial, sans-serif;
   text-align: center;
-  margin: em(16px) 0 2em 0;
+  margin: em(15px) 0 em(35px) 0;
   border: 0;
 }
 
@@ -88,7 +96,7 @@ hr::after {
 }
 
 blockquote {
-  color: $color_3;
+  color: $color_1;
 //  font: 300 0.9375em/1.6 'Akagi Book','Helvetica Neue',Arial,sans-serif;
   border-left: 0.25em solid $color_borders;
   margin: em(17px) 0 em(25px) 0;
@@ -126,14 +134,28 @@ dt {
   font-weight: bold;
 }
 
-figcaption, caption {
-  margin: $margin_default 0;
+%captions {
+  padding: em(17px) 0 0 0;
   line-height: 1em;
-  color: lighten($color_4,50%);
+  color: lighten($color_1,20%);
   font-size: em(14px);
   font-family: 'Proxima Nova Regular',sans-serif;
   text-align: left;
   caption-side: bottom;
+}
+figcaption {
+  @extend %captions;
+  $font_size: 14px;
+  margin: 0 0 em(10px,$font_size) 0;
+  h4 {
+    margin-bottom: em(3px);
+  }
+}
+caption {
+  @extend %captions;
+  $font_size: 14px;
+  margin: em(10px,$font_size) 0 em(10px,$font_size) 0;
+  border-top: 1px solid $color_borders;
 }
 
 figure {
@@ -143,9 +165,12 @@ figure {
 }
 
 .example {
-  outline: 1px solid #EEE;
-  margin: $margin_default 0 em(16px) 0;
-  padding: em(8px) em(16px) em(12px) em(16px);
+  outline: 1px solid $color_borders;
+  margin: 0 0 em(25px) 0;
+  padding: em(23px) em(25px) em(12px) em(25px);
+  pre {
+//    margin: 0;
+  }
 }
 
 
@@ -157,13 +182,8 @@ a {
   font-size: 100%;
   font-family: arial ,sans-serif;
   text-decoration: none;
-}
-.main a {
-  &:hover,
-  &:focus {
-    $my_color: darken($color_2, 10%);
-    color: $my_color;
-    border-bottom: 1px solid $my_color;
+  &:active {
+    opacity: 0.85;
   }
 }
 
@@ -208,14 +228,14 @@ time {
   text-transform: uppercase;
 }
 code, samp {
-  font: #{em(16px)}/90% $code_fontstack;
+  font: #{em(16px)}/#{em(25px,16px)} $code_fontstack;
 }
 code {
   color:$color_2;
 }
 .code {
-  margin: em(16px) 0 0 em(40px);
-  font: #{em(16px)}/1.7143 $code_fontstack;
+  margin: 0 0 em(14px) em(40px);
+  font: #{em(16px)}/#{em(25px,16px)} $code_fontstack;
   color: #999;
   li {
     list-style: decimal-leading-zero;
@@ -253,8 +273,8 @@ sup {
     Edits
 ============================================================ */
 mark, ins {
-  color: $color_4;
-  background-color: lighten($color_2,20%);
+  color: #fff;
+  background-color: lighten($color_1,0%);
   text-decoration:none;
 }
 del {
@@ -285,7 +305,6 @@ td {
   vertical-align: top;
 }
 
-
 /* ============================================================
     Forms
 ============================================================ */
@@ -309,16 +328,17 @@ legend {
     }
   }
   padding: em(6px) em(8px);
-  background-color: lighten($color_4,88%);
-  border: 1px solid lighten($color_4,60%);
+  background-color: lighten($color_borders,88%);
+  border: 1px solid $color_borders;
   box-shadow: inset 0 0.05em 0.65em rgba(0,0,0,0.055);
   font: #{em(16px)}/#{em(24px)} sans-serif;
+  outline-color: $color_1;
 }
 label {
   display: block;
-  margin: em(4px) 0;
+  line-height: em(16px);
+  margin: 0 0 1px 0;
   font-weight: 400;
-  line-height: 1.5;
   @include respond-min($super-desktop) {
     float: left;
     width: 20%;
@@ -328,12 +348,15 @@ label {
     float: none;
   }
 }
+input[type="text"],input[type="password"],input[type="email"] {
+  -webkit-appearance: none;
+}
 input[type="radio"],input[type="checkbox"] {
   margin-right: em(8px);
 }
 fieldset {
   div {
-    margin: $margin_default 0;
+    margin: 0 0 em(23px) 0;
   }
   abbr[title="Required"] {
     color: #900;
@@ -342,11 +365,11 @@ fieldset {
   }
   em {
     display: block;
-    margin: em(4px) 0;
+    margin: em(2px) 0 0 0;
     @include respond-min($super-desktop) {
       margin-left: 20%;
     }
-    color: lighten($color_4,25%);
+    color: lighten($color_default_text,25%);
     font-family: sans-serif;
     font-style: normal;
     font-size: em(14px); 
@@ -372,7 +395,7 @@ fieldset {
   }
 }
 .submit {
-  padding: $margin_default 0 0 0;
+  padding: em(5px) 0 0 0;
 }
 
 #container {

@@ -1,24 +1,25 @@
-$color_1: #b4d13a;
-$color_2: #056EB6;
-$color_3: #666;
-$color_4: #222;
+$color_1: #0066cc; //purple
+$color_2: #6C5E57; //brown
+$color_3: #B0D4CD; //green
+$color_4: #0066cc; //purple
+$color_5: #b8babc; //grey
 $color_default_text: #222;
 $color_background: #fff;
-$color_borders: #ccc;
+$color_borders: #333;
 
-$heading_fontstack: Corbel, Arial, Helvetica, "Nimbus Sans L", "Liberation Sans", sans-serif;
+$heading_fontstack: Helvetica,Arial,sans-serif;
 // Cambria, Georgia, "New Century Schoolbook", "Century Schoolbook L", "Times New Roman", serif;
 // Corbel, Arial, Helvetica, "Nimbus Sans L", "Liberation Sans", sans-serif;
 // Didot,"Bodoni MT", "Century Schoolbook", "Niagara Solid", Utopia, Georgia, Times, "Times New Roman", serif;
 
-$para_fontstack: "Helvetica Neue", sans-serif;
+$para_fontstack: Helvetica,Arial,sans-serif;
 $code_fontstack: Monaco, Menlo,'Courier New',Courier,monospace;
 
-$font-base: 16px;
-$font-base-line-height: 24px;
+$font_base: 16px;
+$font_base_line_height: 25px;
 
 
-$margin_default: 0.9em;
+$margin_default: 1em;
 
 $mobile: 25em; // 400px
 $desktop: 60em; // 960px
