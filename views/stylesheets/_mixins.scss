@@ -66,3 +66,27 @@ $old-ie: false !default;
    @return em($font-base-line-height * $amount, $context);
 }
 
+@mixin middle-me($width:0,$height:0) {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 10;
+  margin: (-($height/2)) 0 0 (-($width/2));       
+  width: $width;
+  height: $height;       
+}                               
+
+@mixin background-image-retina($file, $type, $width, $height) {
+  background-image: image-url($file + '.' + $type);
+
+  @media (-webkit-min-device-pixel-ratio: 2), (-moz-min-device-pixel-ratio: 2) {
+    & {
+      background-image: image-url($file + '@2x.' + $type);
+      -webkit-background-size: $width $height;
+    }
+  }
+}
+@mixin size($width,$height:$width) {
+  width: $width;
+  height: $height;
+}
