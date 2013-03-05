@@ -9,7 +9,7 @@
  * compiled file, but it's generally better to create a new file per style scope.
  *
 */
-/* line 17, ../../../../.rvm/gems/ruby-1.9.2-p318@sinatra-bootstrap/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 17, /Users/ccheshir/.rvm/gems/ruby-1.9.2-p318@sinatra-bootstrap/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, legend, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -31,50 +31,50 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../.rvm/gems/ruby-1.9.2-p318@sinatra-bootstrap/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 22, /Users/ccheshir/.rvm/gems/ruby-1.9.2-p318@sinatra-bootstrap/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../.rvm/gems/ruby-1.9.2-p318@sinatra-bootstrap/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 24, /Users/ccheshir/.rvm/gems/ruby-1.9.2-p318@sinatra-bootstrap/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../.rvm/gems/ruby-1.9.2-p318@sinatra-bootstrap/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 26, /Users/ccheshir/.rvm/gems/ruby-1.9.2-p318@sinatra-bootstrap/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../.rvm/gems/ruby-1.9.2-p318@sinatra-bootstrap/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 28, /Users/ccheshir/.rvm/gems/ruby-1.9.2-p318@sinatra-bootstrap/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../.rvm/gems/ruby-1.9.2-p318@sinatra-bootstrap/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 30, /Users/ccheshir/.rvm/gems/ruby-1.9.2-p318@sinatra-bootstrap/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../.rvm/gems/ruby-1.9.2-p318@sinatra-bootstrap/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 103, /Users/ccheshir/.rvm/gems/ruby-1.9.2-p318@sinatra-bootstrap/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../.rvm/gems/ruby-1.9.2-p318@sinatra-bootstrap/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 32, /Users/ccheshir/.rvm/gems/ruby-1.9.2-p318@sinatra-bootstrap/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../.rvm/gems/ruby-1.9.2-p318@sinatra-bootstrap/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 116, /Users/ccheshir/.rvm/gems/ruby-1.9.2-p318@sinatra-bootstrap/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, #top-nav, #account-nav, section, summary {
   display: block;
 }
 
-/* line 1, ../../views/stylesheets/_global.scss */
+/* line 1, /Users/ccheshir/Development/sinatra-bootstrap/views/stylesheets/_global.scss */
 .hide {
   text-indent: -119988px;
   overflow: hidden;
@@ -84,97 +84,94 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 /* ============================================================
     Sections
 ============================================================ */
-/* line 9, ../../views/stylesheets/_global.scss */
+/* line 9, /Users/ccheshir/Development/sinatra-bootstrap/views/stylesheets/_global.scss */
 .clearfix {
   overflow: hidden;
   *zoom: 1;
 }
 
-/* line 13, ../../views/stylesheets/_global.scss */
+/* line 13, /Users/ccheshir/Development/sinatra-bootstrap/views/stylesheets/_global.scss */
 body, body * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-/* line 18, ../../views/stylesheets/_global.scss */
+/* line 18, /Users/ccheshir/Development/sinatra-bootstrap/views/stylesheets/_global.scss */
 body {
   margin: 0 auto;
   padding: 0;
   /* Temporary */
-  color: #222222;
-  font: 16px/1.5625em Helvetica, Arial, sans-serif;
+  color: #555555;
+  font: 16px/1.5em Helvetica, Arial, "Nimbus Sans L", "Liberation Sans", sans-serif;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
   -webkit-text-size-adjust: 100%;
   background: white;
 }
-/* line 27, ../../views/stylesheets/_global.scss */
-body.guide {
-  background: white url('/images/line-25.png?1355057766') repeat;
-}
 
-/* line 33, ../../views/stylesheets/_global.scss */
+/* line 30, /Users/ccheshir/Development/sinatra-bootstrap/views/stylesheets/_global.scss */
 nav ul, #top-nav ul, #account-nav ul {
   list-style: none;
 }
 
-/* line 38, ../../views/stylesheets/_global.scss */
+/* line 35, /Users/ccheshir/Development/sinatra-bootstrap/views/stylesheets/_global.scss */
 h1 {
-  margin: 0 0 0.66667em 0;
-  color: #0066cc;
-  font: bold 2.625em/90% Helvetica, Arial, sans-serif;
+  margin: 0 0 0.4em 0;
+  color: #028fd7;
+  font: bold 3.75em/1 Helvetica, Arial, "Nimbus Sans L", "Liberation Sans", sans-serif;
+  letter-spacing: -0.075em;
 }
 
-/* line 45, ../../views/stylesheets/_global.scss */
+/* line 42, /Users/ccheshir/Development/sinatra-bootstrap/views/stylesheets/_global.scss */
 h2, legend {
-  margin: 0 0 0.5em 0;
-  padding: 25px 0 0 0;
-  color: #0066cc;
-  font: 300 1.875em/103% Helvetica, Arial, sans-serif;
+  margin: 0 0 0.33333em 0;
+  padding: 11px 0 0 0;
+  color: #014c72;
+  font: 300 2.25em/1 Helvetica, Arial, "Nimbus Sans L", "Liberation Sans", sans-serif;
+  letter-spacing: -0.075em;
 }
 
-/* line 53, ../../views/stylesheets/_global.scss */
+/* line 50, /Users/ccheshir/Development/sinatra-bootstrap/views/stylesheets/_global.scss */
 h3 {
-  margin: 0 0 0.38462em 0;
-  padding: 0.5em 0 0 0;
-  color: #007fff;
-  font: 300 1.625em/106% Helvetica, Arial, sans-serif;
+  margin: 0 0 0.41667em 0;
+  color: #014c72;
+  font: 300 1.5em/1 Helvetica, Arial, "Nimbus Sans L", "Liberation Sans", sans-serif;
 }
 
-/* line 60, ../../views/stylesheets/_global.scss */
+/* line 56, /Users/ccheshir/Development/sinatra-bootstrap/views/stylesheets/_global.scss */
 h4, h5, h6 {
-  margin: 0 0 0.38095em 0;
-  color: #0073e6;
-  font: 300 1.3125em/110% Helvetica, Arial, sans-serif;
+  margin: 0 0 0.55556em 0;
+  color: #555555;
+  font: 300 1.125em/1 Helvetica, Arial, "Nimbus Sans L", "Liberation Sans", sans-serif;
 }
 
 /* ============================================================
     Grouping content
 ============================================================ */
-/* line 71, ../../views/stylesheets/_global.scss */
+/* line 67, /Users/ccheshir/Development/sinatra-bootstrap/views/stylesheets/_global.scss */
 p, pre, ol, ul, dl, figure, figcaption, table, fieldset {
-  margin: 0 0 0.9375em 0;
+  margin: 0 0 0.9em 0;
 }
 
-/* line 75, ../../views/stylesheets/_global.scss */
+/* line 71, /Users/ccheshir/Development/sinatra-bootstrap/views/stylesheets/_global.scss */
 pre {
   white-space: pre-line;
 }
 
-/* line 79, ../../views/stylesheets/_global.scss */
+/* line 75, /Users/ccheshir/Development/sinatra-bootstrap/views/stylesheets/_global.scss */
 hr {
   clear: both;
   display: block;
   height: 0;
   padding: 0;
-  font: 600 1.875em/1em "Akagi SemiBold", "Helvetica Neue", Arial, sans-serif;
+  font: 600 1.875em/1 "Akagi SemiBold", "Helvetica Neue", Arial, sans-serif;
   text-align: center;
-  margin: 0.9375em 0 2.1875em 0;
+  margin: 1em 0 2em 0;
   border: 0;
 }
 
-/* line 90, ../../views/stylesheets/_global.scss */
+/* line 87, /Users/ccheshir/Development/sinatra-bootstrap/views/stylesheets/_global.scss */
 hr::after {
   content: "...";
   height: 0;
@@ -183,137 +180,123 @@ hr::after {
   letter-spacing: 1em;
 }
 
-/* line 98, ../../views/stylesheets/_global.scss */
+/* line 95, /Users/ccheshir/Development/sinatra-bootstrap/views/stylesheets/_global.scss */
 blockquote {
-  color: #0066cc;
-  border-left: 0.25em solid #333333;
+  color: #028fd7;
+  border-left: 0.25em solid #cccccc;
   margin: 1.0625em 0 1.5625em 0;
   padding: 0 1.5625em 0 1.334em;
 }
-/* line 104, ../../views/stylesheets/_global.scss */
+/* line 100, /Users/ccheshir/Development/sinatra-bootstrap/views/stylesheets/_global.scss */
 blockquote p {
   line-height: 1.6;
   margin: 0.5625em 0;
 }
 
-/* line 109, ../../views/stylesheets/_global.scss */
+/* line 105, /Users/ccheshir/Development/sinatra-bootstrap/views/stylesheets/_global.scss */
 blockquote, q {
   quotes: none;
 }
-/* line 111, ../../views/stylesheets/_global.scss */
+/* line 107, /Users/ccheshir/Development/sinatra-bootstrap/views/stylesheets/_global.scss */
 blockquote:before, blockquote:after, q:before, q:after {
   content: '';
   content: none;
 }
 
-/* line 117, ../../views/stylesheets/_global.scss */
+/* line 113, /Users/ccheshir/Development/sinatra-bootstrap/views/stylesheets/_global.scss */
 ul {
   list-style-type: inherit;
 }
-/* line 119, ../../views/stylesheets/_global.scss */
+/* line 115, /Users/ccheshir/Development/sinatra-bootstrap/views/stylesheets/_global.scss */
 ul ul, ul ol {
   margin-top: 0;
 }
 
-/* line 123, ../../views/stylesheets/_global.scss */
+/* line 119, /Users/ccheshir/Development/sinatra-bootstrap/views/stylesheets/_global.scss */
 ol {
   list-style-type: decimal;
 }
 
-/* line 126, ../../views/stylesheets/_global.scss */
+/* line 122, /Users/ccheshir/Development/sinatra-bootstrap/views/stylesheets/_global.scss */
 li, dd {
   margin-left: 1.8125em;
 }
 
-/* line 129, ../../views/stylesheets/_global.scss */
+/* line 125, /Users/ccheshir/Development/sinatra-bootstrap/views/stylesheets/_global.scss */
 li li {
   margin-top: 0;
 }
 
-/* line 132, ../../views/stylesheets/_global.scss */
+/* line 128, /Users/ccheshir/Development/sinatra-bootstrap/views/stylesheets/_global.scss */
 dt {
   font-family: 'Proxima Nova Bold',sans-serif;
   font-weight: bold;
 }
 
-/* line 137, ../../views/stylesheets/_global.scss */
+/* line 133, /Users/ccheshir/Development/sinatra-bootstrap/views/stylesheets/_global.scss */
 figcaption, caption {
-  padding: 1.0625em 0 0 0;
+  margin: 0.9em 0;
   line-height: 1em;
-  color: #3399ff;
+  color: #e4d8eb;
   font-size: 0.875em;
   font-family: 'Proxima Nova Regular',sans-serif;
   text-align: left;
   caption-side: bottom;
 }
 
-/* line 146, ../../views/stylesheets/_global.scss */
-figcaption {
-  margin: 0 0 0.71429em 0;
-}
-/* line 150, ../../views/stylesheets/_global.scss */
-figcaption h4 {
-  margin-bottom: 0.1875em;
-}
-
-/* line 154, ../../views/stylesheets/_global.scss */
-caption {
-  margin: 0.71429em 0 0.71429em 0;
-  border-top: 1px solid #333333;
-}
-
-/* line 162, ../../views/stylesheets/_global.scss */
+/* line 144, /Users/ccheshir/Development/sinatra-bootstrap/views/stylesheets/_global.scss */
 figure img {
   width: 100%;
 }
 
-/* line 167, ../../views/stylesheets/_global.scss */
+/* line 149, /Users/ccheshir/Development/sinatra-bootstrap/views/stylesheets/_global.scss */
 .example {
-  outline: 1px solid #333333;
-  margin: 0 0 1.5625em 0;
-  padding: 1.4375em 1.5625em 0.75em 1.5625em;
+  outline: 1px solid #EEE;
+  margin: 0.9em 0 1em 0;
+  padding: 0.5em 1em 0.75em 1em;
 }
 
 /* ============================================================
     Text-level semantics
 ============================================================ */
-/* line 180, ../../views/stylesheets/_global.scss */
+/* line 159, /Users/ccheshir/Development/sinatra-bootstrap/views/stylesheets/_global.scss */
 a {
-  color: #6c5e57;
+  color: #028fd7;
   font-size: 100%;
   font-family: arial ,sans-serif;
   text-decoration: none;
 }
-/* line 185, ../../views/stylesheets/_global.scss */
-a:active {
-  opacity: 0.85;
+
+/* line 167, /Users/ccheshir/Development/sinatra-bootstrap/views/stylesheets/_global.scss */
+.main a:hover, .main a:focus {
+  color: #026da4;
 }
 
-/* line 190, ../../views/stylesheets/_global.scss */
+/* line 173, /Users/ccheshir/Development/sinatra-bootstrap/views/stylesheets/_global.scss */
 em, em a, i, var, samp, cite, cite a {
-  font: italic 300 1em/90% Helvetica, Arial, sans-serif;
+  font: italic 300 1em/0.9 Helvetica, Arial, "Nimbus Sans L", "Liberation Sans", sans-serif;
 }
 
-/* line 193, ../../views/stylesheets/_global.scss */
+/* line 176, /Users/ccheshir/Development/sinatra-bootstrap/views/stylesheets/_global.scss */
 strong, b {
   font-weight: 600;
 }
 
-/* line 197, ../../views/stylesheets/_global.scss */
+/* line 180, /Users/ccheshir/Development/sinatra-bootstrap/views/stylesheets/_global.scss */
 :lang(en-gb) > q {
   quotes: "\201C" "\201D" "\2018" "\2019";
 }
 
-/* line 201, ../../views/stylesheets/_global.scss */
+/* line 184, /Users/ccheshir/Development/sinatra-bootstrap/views/stylesheets/_global.scss */
 q::before {
   content: open-quote;
 }
-/* line 204, ../../views/stylesheets/_global.scss */
+/* line 187, /Users/ccheshir/Development/sinatra-bootstrap/views/stylesheets/_global.scss */
 q::after {
   content: close-quote;
 }
 
-/* line 209, ../../views/stylesheets/_global.scss */
+/* line 192, /Users/ccheshir/Development/sinatra-bootstrap/views/stylesheets/_global.scss */
 small {
   font-size: 0.875em;
   /* 14px */
@@ -321,43 +304,43 @@ small {
   /* em(16px) */
 }
 
-/* line 213, ../../views/stylesheets/_global.scss */
+/* line 196, /Users/ccheshir/Development/sinatra-bootstrap/views/stylesheets/_global.scss */
 dfn[title], abbr[title]:hover {
   border-bottom: 1px dotted rgba(0, 0, 0, 0.2);
   cursor: help;
 }
 
-/* line 217, ../../views/stylesheets/_global.scss */
+/* line 200, /Users/ccheshir/Development/sinatra-bootstrap/views/stylesheets/_global.scss */
 abbr {
   letter-spacing: 1px;
 }
 
-/* line 223, ../../views/stylesheets/_global.scss */
+/* line 206, /Users/ccheshir/Development/sinatra-bootstrap/views/stylesheets/_global.scss */
 time {
-  color: #cce5ff;
+  color: #e4d8eb;
   font-family: arial ,sans-serif;
   font-size: 0.75em;
   line-height: 1em;
   text-transform: uppercase;
 }
 
-/* line 230, ../../views/stylesheets/_global.scss */
+/* line 213, /Users/ccheshir/Development/sinatra-bootstrap/views/stylesheets/_global.scss */
 code, samp {
-  font: 1em/1.5625em Monaco, Menlo, "Courier New", Courier, monospace;
+  font: 1em/0.9 Monaco, Menlo, "Courier New", Courier, monospace;
 }
 
-/* line 233, ../../views/stylesheets/_global.scss */
+/* line 216, /Users/ccheshir/Development/sinatra-bootstrap/views/stylesheets/_global.scss */
 code {
-  color: #6c5e57;
+  color: #028fd7;
 }
 
-/* line 236, ../../views/stylesheets/_global.scss */
+/* line 219, /Users/ccheshir/Development/sinatra-bootstrap/views/stylesheets/_global.scss */
 .code {
-  margin: 0 0 0.875em 2.5em;
-  font: 1em/1.5625em Monaco, Menlo, "Courier New", Courier, monospace;
+  margin: 0 0 0 2.5em;
+  font: 1em/1.7 Monaco, Menlo, "Courier New", Courier, monospace;
   color: #999;
 }
-/* line 240, ../../views/stylesheets/_global.scss */
+/* line 223, /Users/ccheshir/Development/sinatra-bootstrap/views/stylesheets/_global.scss */
 .code li {
   list-style: decimal-leading-zero;
   background: #F0F0F0;
@@ -365,19 +348,19 @@ code {
   border-top: 1px solid white;
   padding: 0 0.5em;
 }
-/* line 247, ../../views/stylesheets/_global.scss */
+/* line 230, /Users/ccheshir/Development/sinatra-bootstrap/views/stylesheets/_global.scss */
 .code .tab1 {
   padding-left: 4ex;
 }
 
-/* line 251, ../../views/stylesheets/_global.scss */
+/* line 234, /Users/ccheshir/Development/sinatra-bootstrap/views/stylesheets/_global.scss */
 kbd {
   margin: 0 0.4px 0;
   padding: 0.3125em 0.375em;
-  background-color: #fbfafa;
-  color: #342d29;
+  background-color: white;
+  color: #014c72;
   font: normal 0.875em/90% sans-serif;
-  border: 1px solid #e4e0de;
+  border: 1px solid #d9f2ff;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   -ms-border-radius: 4px;
@@ -388,14 +371,14 @@ kbd {
   background-clip: padding-box;
 }
 
-/* line 261, ../../views/stylesheets/_global.scss */
+/* line 244, /Users/ccheshir/Development/sinatra-bootstrap/views/stylesheets/_global.scss */
 sub {
   font-size: smaller;
   line-height: 90%;
   vertical-align: sub;
 }
 
-/* line 266, ../../views/stylesheets/_global.scss */
+/* line 249, /Users/ccheshir/Development/sinatra-bootstrap/views/stylesheets/_global.scss */
 sup {
   font-size: smaller;
   line-height: 90%;
@@ -405,14 +388,14 @@ sup {
 /* ============================================================
     Edits
 ============================================================ */
-/* line 275, ../../views/stylesheets/_global.scss */
+/* line 258, /Users/ccheshir/Development/sinatra-bootstrap/views/stylesheets/_global.scss */
 mark, ins {
-  color: #fff;
-  background-color: #0066cc;
+  color: #6a4282;
+  background-color: #42befd;
   text-decoration: none;
 }
 
-/* line 280, ../../views/stylesheets/_global.scss */
+/* line 263, /Users/ccheshir/Development/sinatra-bootstrap/views/stylesheets/_global.scss */
 del {
   text-decoration: line-through;
 }
@@ -420,29 +403,29 @@ del {
 /* ============================================================
     Tabular data
 ============================================================ */
-/* line 288, ../../views/stylesheets/_global.scss */
+/* line 271, /Users/ccheshir/Development/sinatra-bootstrap/views/stylesheets/_global.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 292, ../../views/stylesheets/_global.scss */
+/* line 275, /Users/ccheshir/Development/sinatra-bootstrap/views/stylesheets/_global.scss */
 td, th {
   padding: 0.5em 1.5625em 0.5em 0;
   border-bottom: 1px solid white;
   text-align: left;
 }
 
-/* line 297, ../../views/stylesheets/_global.scss */
+/* line 280, /Users/ccheshir/Development/sinatra-bootstrap/views/stylesheets/_global.scss */
 th {
   padding: 0.5em 0 0.4375em 0;
   border-bottom-color: white;
-  color: #6c5e57;
-  font: 500 1.0625em/1em Helvetica, Arial, sans-serif;
+  color: #028fd7;
+  font: 500 1.0625em/1em Helvetica, Arial, "Nimbus Sans L", "Liberation Sans", sans-serif;
   vertical-align: bottom;
 }
 
-/* line 304, ../../views/stylesheets/_global.scss */
+/* line 287, /Users/ccheshir/Development/sinatra-bootstrap/views/stylesheets/_global.scss */
 td {
   vertical-align: top;
 }
@@ -450,128 +433,122 @@ td {
 /* ============================================================
     Forms
 ============================================================ */
-/* line 312, ../../views/stylesheets/_global.scss */
+/* line 296, /Users/ccheshir/Development/sinatra-bootstrap/views/stylesheets/_global.scss */
 legend {
   padding-bottom: 0.5em;
 }
 
-/* line 316, ../../views/stylesheets/_global.scss */
+/* line 300, /Users/ccheshir/Development/sinatra-bootstrap/views/stylesheets/_global.scss */
 .field {
   width: 100%;
   padding: 0.375em 0.5em;
   background-color: white;
-  border: 1px solid #333333;
+  border: 1px solid #fbfafc;
   box-shadow: inset 0 0.05em 0.65em rgba(0, 0, 0, 0.055);
-  font: 1em/1.5em sans-serif;
-  outline-color: #0066cc;
+  font: 1em/1.5 sans-serif;
 }
 @media screen and (min-width: 30em) {
-  /* line 316, ../../views/stylesheets/_global.scss */
+  /* line 300, /Users/ccheshir/Development/sinatra-bootstrap/views/stylesheets/_global.scss */
   .field {
     width: 50%;
   }
-  /* line 320, ../../views/stylesheets/_global.scss */
+  /* line 304, /Users/ccheshir/Development/sinatra-bootstrap/views/stylesheets/_global.scss */
   .field.small {
     width: 5em;
   }
-  /* line 323, ../../views/stylesheets/_global.scss */
+  /* line 307, /Users/ccheshir/Development/sinatra-bootstrap/views/stylesheets/_global.scss */
   .field.medium {
     width: 15em;
   }
-  /* line 326, ../../views/stylesheets/_global.scss */
+  /* line 310, /Users/ccheshir/Development/sinatra-bootstrap/views/stylesheets/_global.scss */
   .field.large {
     width: 20em;
   }
 }
 
-/* line 337, ../../views/stylesheets/_global.scss */
+/* line 320, /Users/ccheshir/Development/sinatra-bootstrap/views/stylesheets/_global.scss */
 label {
   display: block;
-  line-height: 1em;
-  margin: 0 0 1px 0;
+  margin: 0 0 4px 0;
   font-weight: 400;
+  line-height: 1.5;
 }
 @media screen and (min-width: 62.375em) {
-  /* line 337, ../../views/stylesheets/_global.scss */
+  /* line 320, /Users/ccheshir/Development/sinatra-bootstrap/views/stylesheets/_global.scss */
   label {
     float: left;
     width: 20%;
   }
 }
-/* line 346, ../../views/stylesheets/_global.scss */
+/* line 329, /Users/ccheshir/Development/sinatra-bootstrap/views/stylesheets/_global.scss */
 label.check {
   font-weight: normal;
   float: none;
 }
 
-/* line 351, ../../views/stylesheets/_global.scss */
-input[type="text"], input[type="password"], input[type="email"] {
-  -webkit-appearance: none;
-}
-
-/* line 354, ../../views/stylesheets/_global.scss */
+/* line 334, /Users/ccheshir/Development/sinatra-bootstrap/views/stylesheets/_global.scss */
 input[type="radio"], input[type="checkbox"] {
   margin-right: 0.5em;
 }
 
-/* line 358, ../../views/stylesheets/_global.scss */
+/* line 338, /Users/ccheshir/Development/sinatra-bootstrap/views/stylesheets/_global.scss */
 fieldset div {
-  margin: 0 0 1.4375em 0;
+  margin: 0 0 1em 0;
 }
-/* line 361, ../../views/stylesheets/_global.scss */
+/* line 341, /Users/ccheshir/Development/sinatra-bootstrap/views/stylesheets/_global.scss */
 fieldset abbr[title="Required"] {
   color: #900;
   font: normal 1.25em/0.1 sans-serif;
   border-bottom: 0 none;
 }
-/* line 366, ../../views/stylesheets/_global.scss */
+/* line 346, /Users/ccheshir/Development/sinatra-bootstrap/views/stylesheets/_global.scss */
 fieldset em {
   display: block;
-  margin: 0.125em 0 0 0;
-  color: #626262;
+  margin: 4px 0 0 0;
+  color: #a983c0;
   font-family: sans-serif;
   font-style: normal;
   font-size: 0.875em;
   line-height: 1em;
 }
 @media screen and (min-width: 62.375em) {
-  /* line 366, ../../views/stylesheets/_global.scss */
+  /* line 346, /Users/ccheshir/Development/sinatra-bootstrap/views/stylesheets/_global.scss */
   fieldset em {
     margin-left: 20%;
   }
 }
-/* line 378, ../../views/stylesheets/_global.scss */
+/* line 358, /Users/ccheshir/Development/sinatra-bootstrap/views/stylesheets/_global.scss */
 fieldset.options {
   clear: left;
 }
-/* line 380, ../../views/stylesheets/_global.scss */
+/* line 360, /Users/ccheshir/Development/sinatra-bootstrap/views/stylesheets/_global.scss */
 fieldset.options ul {
   margin: 0.25em 0;
   list-style: none;
 }
 @media screen and (min-width: 62.375em) {
-  /* line 380, ../../views/stylesheets/_global.scss */
+  /* line 360, /Users/ccheshir/Development/sinatra-bootstrap/views/stylesheets/_global.scss */
   fieldset.options ul {
     margin-left: 20%;
   }
 }
-/* line 386, ../../views/stylesheets/_global.scss */
+/* line 366, /Users/ccheshir/Development/sinatra-bootstrap/views/stylesheets/_global.scss */
 fieldset.options ul li {
   margin-left: 0;
 }
-/* line 389, ../../views/stylesheets/_global.scss */
+/* line 369, /Users/ccheshir/Development/sinatra-bootstrap/views/stylesheets/_global.scss */
 fieldset.options ul label {
   float: none;
   width: auto;
   font-weight: normal;
 }
 
-/* line 397, ../../views/stylesheets/_global.scss */
+/* line 377, /Users/ccheshir/Development/sinatra-bootstrap/views/stylesheets/_global.scss */
 .submit {
-  padding: 0.3125em 0 0 0;
+  padding: 0.9em 0 0 0;
 }
 
-/* line 401, ../../views/stylesheets/_global.scss */
+/* line 381, /Users/ccheshir/Development/sinatra-bootstrap/views/stylesheets/_global.scss */
 #container {
   margin: 0 auto;
 }
@@ -579,7 +556,7 @@ fieldset.options ul label {
 /* ============================================================
     Buttons
 ============================================================ */
-/* line 409, ../../views/stylesheets/_global.scss */
+/* line 389, /Users/ccheshir/Development/sinatra-bootstrap/views/stylesheets/_global.scss */
 button, input[type='submit'], input[type='button'], .button, a {
   -webkit-transition: all 0.05s ease-in-out, 1s;
   -moz-transition: all 0.05s ease-in-out, 1s;
@@ -587,54 +564,54 @@ button, input[type='submit'], input[type='button'], .button, a {
   transition: all 0.05s ease-in-out, 1s;
 }
 
-/* line 412, ../../views/stylesheets/_global.scss */
+/* line 392, /Users/ccheshir/Development/sinatra-bootstrap/views/stylesheets/_global.scss */
 button, input[type='submit'], input[type='button'], .button {
   -webkit-appearance: none;
   display: inline-block;
   padding: 0.8125em 1em;
   border: 0;
-  background: #6c5e57;
-  font: 100%/1 Helvetica, Arial, sans-serif;
+  background: #028fd7;
+  font: 100%/1 Helvetica, Arial, "Nimbus Sans L", "Liberation Sans", sans-serif;
   color: #fff;
   cursor: pointer;
   border-radius: 4px;
   box-shadow: 0 0.125em 0.25em rgba(0, 0, 0, 0.25);
 }
-/* line 423, ../../views/stylesheets/_global.scss */
+/* line 403, /Users/ccheshir/Development/sinatra-bootstrap/views/stylesheets/_global.scss */
 button:hover, input[type='submit']:hover, input[type='button']:hover, .button:hover {
-  background: #88776e;
+  background: #0facfd;
 }
-/* line 426, ../../views/stylesheets/_global.scss */
+/* line 406, /Users/ccheshir/Development/sinatra-bootstrap/views/stylesheets/_global.scss */
 button:active, input[type='submit']:active, input[type='button']:active, .button:active {
-  background: #504540;
+  background: #026da4;
   box-shadow: 0 0.125em 0.25em rgba(0, 0, 0, 0.25), inset 0 0.125em 0.25em rgba(0, 0, 0, 0.25);
 }
 
-/* line 3, ../../views/stylesheets/_project.scss */
+/* line 3, /Users/ccheshir/Development/sinatra-bootstrap/views/stylesheets/_project.scss */
 body {
   margin-top: 100px;
 }
 @media screen and (max-width: 30em) {
-  /* line 3, ../../views/stylesheets/_project.scss */
+  /* line 3, /Users/ccheshir/Development/sinatra-bootstrap/views/stylesheets/_project.scss */
   body {
     padding-left: 1em;
     padding-right: 1em;
   }
 }
 @media screen and (min-width: 30em) {
-  /* line 3, ../../views/stylesheets/_project.scss */
+  /* line 3, /Users/ccheshir/Development/sinatra-bootstrap/views/stylesheets/_project.scss */
   body {
     padding-left: 2em;
     padding-right: 2em;
   }
 }
 
-/* line 15, ../../views/stylesheets/_project.scss */
+/* line 15, /Users/ccheshir/Development/sinatra-bootstrap/views/stylesheets/_project.scss */
 .container {
   position: relative;
 }
 @media screen and (min-width: 60em) {
-  /* line 15, ../../views/stylesheets/_project.scss */
+  /* line 15, /Users/ccheshir/Development/sinatra-bootstrap/views/stylesheets/_project.scss */
   .container {
     margin: 0 auto;
     max-width: 60em;
@@ -646,7 +623,7 @@ body {
 top nav 
 
 */
-/* line 29, ../../views/stylesheets/_project.scss */
+/* line 29, /Users/ccheshir/Development/sinatra-bootstrap/views/stylesheets/_project.scss */
 #top-header {
   position: fixed;
   z-index: 2;
@@ -654,42 +631,42 @@ top nav
   left: 0;
   width: 100%;
   height: 50px;
-  background: #b0d4cd;
+  background: #004978;
 }
 
-/* line 38, ../../views/stylesheets/_project.scss */
+/* line 38, /Users/ccheshir/Development/sinatra-bootstrap/views/stylesheets/_project.scss */
 #top-nav {
   float: left;
 }
-/* line 41, ../../views/stylesheets/_project.scss */
+/* line 41, /Users/ccheshir/Development/sinatra-bootstrap/views/stylesheets/_project.scss */
 #top-nav ul {
   margin: 0;
   padding: 0;
 }
-/* line 45, ../../views/stylesheets/_project.scss */
+/* line 45, /Users/ccheshir/Development/sinatra-bootstrap/views/stylesheets/_project.scss */
 #top-nav ul, #top-nav li, #top-nav a {
   height: 50px;
   line-height: 50px;
 }
-/* line 49, ../../views/stylesheets/_project.scss */
+/* line 49, /Users/ccheshir/Development/sinatra-bootstrap/views/stylesheets/_project.scss */
 #top-nav li {
   float: left;
   margin: 0;
 }
-/* line 53, ../../views/stylesheets/_project.scss */
+/* line 53, /Users/ccheshir/Development/sinatra-bootstrap/views/stylesheets/_project.scss */
 #top-nav a {
   float: left;
   display: block;
   padding: 0 1em;
   color: #fff;
 }
-/* line 58, ../../views/stylesheets/_project.scss */
+/* line 58, /Users/ccheshir/Development/sinatra-bootstrap/views/stylesheets/_project.scss */
 #top-nav a:hover {
   color: #fff;
-  background-color: #f2f8f7;
+  background-color: #42befd;
 }
 
-/* line 64, ../../views/stylesheets/_project.scss */
+/* line 64, /Users/ccheshir/Development/sinatra-bootstrap/views/stylesheets/_project.scss */
 #account-nav {
   -webkit-transition: "background-color" 0.15s ease-out;
   -moz-transition: "background-color" 0.15s ease-out;
@@ -701,20 +678,20 @@ top nav
   float: right;
   background: url('/images/nav/account.png?1342541569') no-repeat 0 0;
 }
-/* line 72, ../../views/stylesheets/_project.scss */
+/* line 72, /Users/ccheshir/Development/sinatra-bootstrap/views/stylesheets/_project.scss */
 #account-nav:hover {
   cursor: pointer;
 }
-/* line 75, ../../views/stylesheets/_project.scss */
+/* line 75, /Users/ccheshir/Development/sinatra-bootstrap/views/stylesheets/_project.scss */
 #account-nav:hover, #account-nav.on {
-  background-color: #d1e6e2;
+  background-color: #0facfd;
   background-position: 0 -50px;
 }
-/* line 80, ../../views/stylesheets/_project.scss */
+/* line 80, /Users/ccheshir/Development/sinatra-bootstrap/views/stylesheets/_project.scss */
 #account-nav.on ul {
   display: block;
 }
-/* line 84, ../../views/stylesheets/_project.scss */
+/* line 84, /Users/ccheshir/Development/sinatra-bootstrap/views/stylesheets/_project.scss */
 #account-nav ul {
   z-index: 10;
   display: none;
@@ -724,22 +701,22 @@ top nav
   padding: 0;
   margin: 0;
   width: 11.5625em;
-  background-color: #d1e6e2;
+  background-color: #0facfd;
 }
-/* line 94, ../../views/stylesheets/_project.scss */
+/* line 94, /Users/ccheshir/Development/sinatra-bootstrap/views/stylesheets/_project.scss */
 #account-nav ul li {
   margin: 0;
   padding: 0;
   list-style: none;
 }
-/* line 99, ../../views/stylesheets/_project.scss */
+/* line 99, /Users/ccheshir/Development/sinatra-bootstrap/views/stylesheets/_project.scss */
 #account-nav ul a {
   display: block;
   padding: 0.5em 1em;
   color: #fff;
 }
-/* line 103, ../../views/stylesheets/_project.scss */
+/* line 103, /Users/ccheshir/Development/sinatra-bootstrap/views/stylesheets/_project.scss */
 #account-nav ul a:hover {
   color: #fff;
-  background-color: #f2f8f7;
+  background-color: #42befd;
 }
