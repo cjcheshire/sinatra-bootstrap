@@ -7,9 +7,9 @@ gem 'slim'
 gem 'json'
 gem 'sinatra-static-assets'
 gem 'sinatra-advanced-routes'
+gem 'sinatra-compass'
 
 group :development, :test do
   gem 'foreman'
   gem 'shotgun'
-  gem 'sinatra-compass'
 end
