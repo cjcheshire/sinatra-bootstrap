@@ -1,9 +1,5 @@
 require './app'
 
-# Compass Configuration
-
-require 'grid-coordinates'
-
 # Configuration to use when running within Sinatra
 project_path          = Sinatra::Application.root
 
@@ -19,37 +15,20 @@ sass_dir              = File.join 'views', 'stylesheets'
 images_dir            = File.join 'public', 'images'
 javascripts_dir       = File.join 'public', 'javascripts'
 
-
 # Syntax preference
 preferred_syntax      = :sass
 
 # Determine whether Compass generates relative or absolute paths
 relative_assets       = false
 
+#environment
+environment           = :development
 
-if production?
+# Determines whether line comments should be added to compiled css for easier debugging
+line_comments         = true
 
-  #environment
-  environment           = :production
-  
-  # Determines whether line comments should be added to compiled css for easier debugging
-  line_comments         = false
-
-  # CSS output style - :nested, :expanded, :compact, or :compressed
-  output_style          = :compressed
-
-elsif development?
-
-  #environment
-  environment           = :development
-  
-  # Determines whether line comments should be added to compiled css for easier debugging
-  line_comments         = true
-
-  # CSS output style - :nested, :expanded, :compact, or :compressed
-  output_style          = :expanded
-
-end
+# CSS output style - :nested, :expanded, :compact, or :compressed
+output_style          = :expanded
 
 
 

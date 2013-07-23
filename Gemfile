@@ -1,16 +1,15 @@
-source :rubygems
+source 'https://rubygems.org'
 
 gem 'rake'
-gem 'sinatra', '~> 1.3.0' 
+gem 'sinatra', '~> 1.4' 
 gem 'sinatra-contrib'
-gem 'shotgun', '~> 0.9'
-gem 'slim', '~> 1.2.2'
+gem 'slim'
 gem 'json'
-gem 'sinatra-static-assets', '~> 1.0.2'
+gem 'sinatra-static-assets'
+gem 'sinatra-advanced-routes'
 
-# Sass & Compass
-gem 'sass', '~> 3.2.1'
-gem 'compass', '~> 0.12.2'
-
-# Sass libraries
-gem 'grid-coordinates', '~> 1.1.4'
+group :development, :test do
+  gem 'foreman'
+  gem 'shotgun'
+  gem 'sinatra-compass'
+end

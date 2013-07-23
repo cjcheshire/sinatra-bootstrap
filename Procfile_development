@@ -1,0 +1,2 @@
+web: shotgun -p 3456
+resque: rake styles:watch

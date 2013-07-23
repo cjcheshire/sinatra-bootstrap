@@ -1,6 +1,8 @@
 require 'rubygems'
 require 'sinatra'
 require 'sinatra/content_for' 
+require 'sinatra/advanced_routes'
+require "sinatra/compass"
 require 'sinatra/static_assets'
 require 'sinatra/base'
 require 'sinatra/json'
@@ -8,6 +10,9 @@ require 'slim'
 require 'json'
 
 class App < Sinatra::Base
+  
+  register Sinatra::AdvancedRoutes
+  register Sinatra::Compass
 
   # Helpers
   helpers Sinatra::Helpers
@@ -39,5 +44,7 @@ class App < Sinatra::Base
   get '/' do
     slim :index, :layout => :'layouts/application'
   end
+  
+  run! if app_file == $0
 
 end
