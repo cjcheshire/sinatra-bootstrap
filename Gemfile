@@ -9,12 +9,12 @@ gem 'json'
 gem 'sinatra-static-assets'
 gem 'sinatra-advanced-routes'
 
+gem 'rspec'
+gem 'capybara'
+
 group :development,:test do
   gem 'sinatra-compass'
   gem 'foreman'
   gem 'rerun'
   gem 'unicorn'
-  gem 'rspec'
-  gem 'capybara'
-  gem 'rack-test'
 end

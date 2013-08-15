@@ -105,7 +105,6 @@ DEPENDENCIES
   capybara
   foreman
   json
-  rack-test
   rake
   rerun
   rspec
