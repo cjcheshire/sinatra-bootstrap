@@ -44,7 +44,6 @@ You should see output something like this:
     Installing grid-coordinates (1.1.4) 
     Installing slim (1.2.2) 
     Installing rack (1.3.0) 
-    Installing shotgun (0.9) 
     Installing tilt (1.3.2) 
     Installing sinatra (1.2.6) 
     Using bundler (1.0.14) 
@@ -54,14 +53,10 @@ You should see output something like this:
 
 After you've ran `bundle install` and Sinatra as well as the other required gems are installed, start it up by running this command:
 
-    # runs `bundle exec shotgun config.ru` behind the scenes
+    # runs `bundle exec foreman start -f Procfile_development` behind the scenes
     rake start
 
-This will start Sinatra Bootstrap on Sinatra's default port 9393 and will now be able to view the application in your web browser at this URL [http://localhost:9393](http://localhost:9393).
-
-You'll also want to open a new terminal window to the same directory and run the Compass watch rake task so we can monitor our Sass files for changes.
-
-    compass watch
+This will start on port 3456 and will now be able to view the application in your web browser at this URL [http://localhost:3456](http://localhost:3456).
 
 ## Helper Rake Tasks
 
