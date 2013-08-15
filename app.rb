@@ -9,7 +9,7 @@ require 'sinatra/json'
 require 'slim'
 require 'json'
 
-class App < Sinatra::Base
+class DemoApp < Sinatra::Base
   
   register Sinatra::AdvancedRoutes
   register Sinatra::Compass

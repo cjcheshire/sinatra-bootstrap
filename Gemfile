@@ -8,9 +8,12 @@ gem 'slim'
 gem 'json'
 gem 'sinatra-static-assets'
 gem 'sinatra-advanced-routes'
-gem 'sinatra-compass'
 
-group :development, :test do
+group :development,:test do
+  gem 'sinatra-compass'
   gem 'foreman'
-  gem 'shotgun'
+  gem 'shotgun', '~> 0.9'
+  gem 'rspec'
+  gem 'capybara'
+  gem 'rack-test'
 end
