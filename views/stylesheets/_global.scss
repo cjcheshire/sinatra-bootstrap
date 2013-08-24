@@ -387,7 +387,7 @@ fieldset {
 ============================================================ */
 
 button, input[type='submit'], input[type='button'], .button, a {
-  @include single-transition(all 0.05s ease-in-out);
+  @include single-transition(all, 0.05s, ease-in-out);
 }
 button, input[type='submit'], input[type='button'], .button {
   -webkit-appearance: none;
