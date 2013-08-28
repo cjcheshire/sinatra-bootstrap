@@ -390,21 +390,15 @@ button, input[type='submit'], input[type='button'], .button, a {
   @include single-transition(all, 0.05s, ease-in-out);
 }
 button, input[type='submit'], input[type='button'], .button {
-  -webkit-appearance: none;
-  display: inline-block;
-  padding: em(13px) em(16px);
-  border: 0;
-  background: $color_3;
-  font: 100%/1 $para_fontstack;
-  color: #fff;
-  cursor: pointer;
-  border-radius: 4px;
-  box-shadow: 0 em(2px) em(4px) rgba(0,0,0,0.25);
-  &:hover {
-    background: lighten($color_3,10%);
-  }  
-  &:active {
-    background: darken($color_3,10%);
-    box-shadow: 0 em(2px) em(4px) rgba(0,0,0,0.25), inset 0 em(2px) em(4px) rgba(0,0,0,0.25);
+  @include hover_button($color_1) {
+    -webkit-appearance: none;
+    display: inline-block;
+    padding: em(13px) em(16px);
+    border: 0;
+    font: normal 1.2em/1 $para_fontstack;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 4px;
+    box-shadow: 0 em(2px) em(4px) rgba(0,0,0,0.25);
   }
 }
