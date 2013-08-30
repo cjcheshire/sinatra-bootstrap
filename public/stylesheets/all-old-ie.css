@@ -534,10 +534,10 @@ fieldset.options ul label {
 ============================================================ */
 /* line 389, ../../views/stylesheets/_global.scss */
 button, input[type='submit'], input[type='button'], .button, a {
-  -webkit-transition: all 0.05s ease-in-out, 1s;
-  -moz-transition: all 0.05s ease-in-out, 1s;
-  -o-transition: all 0.05s ease-in-out, 1s;
-  transition: all 0.05s ease-in-out, 1s;
+  -webkit-transition: all 0.05s ease-in-out;
+  -moz-transition: all 0.05s ease-in-out;
+  -o-transition: all 0.05s ease-in-out;
+  transition: all 0.05s ease-in-out;
 }
 
 /* line 392, ../../views/stylesheets/_global.scss */
@@ -546,20 +546,21 @@ button, input[type='submit'], input[type='button'], .button {
   display: inline-block;
   padding: 0.8125em 1em;
   border: 0;
-  background: #028fd7;
-  font: 100%/1 Helvetica, Arial, "Nimbus Sans L", "Liberation Sans", sans-serif;
+  font: normal 1.2em/1 Helvetica, Arial, "Nimbus Sans L", "Liberation Sans", sans-serif;
   color: #fff;
   cursor: pointer;
   border-radius: 4px;
   box-shadow: 0 0.125em 0.25em rgba(0, 0, 0, 0.25);
+  background-color: #004978;
 }
-/* line 403, ../../views/stylesheets/_global.scss */
+/* line 97, ../../views/stylesheets/_mixins.scss */
 button:hover, input[type='submit']:hover, input[type='button']:hover, .button:hover {
-  background: #0facfd;
+  background: #0068ab;
+  color: #fff;
 }
-/* line 406, ../../views/stylesheets/_global.scss */
+/* line 101, ../../views/stylesheets/_mixins.scss */
 button:active, input[type='submit']:active, input[type='button']:active, .button:active {
-  background: #026da4;
+  background: #002a45;
   box-shadow: 0 0.125em 0.25em rgba(0, 0, 0, 0.25), inset 0 0.125em 0.25em rgba(0, 0, 0, 0.25);
 }
 
