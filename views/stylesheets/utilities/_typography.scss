@@ -1,0 +1,8 @@
+@function em($target, $context: $font-base) {
+   @if $target == 0 { @return 0 }
+   @return $target / $context + 0em;
+}
+
+@function lh($amount: 1, $context: $font-base) {
+   @return em($font-base-line-height * $amount, $context);
+}

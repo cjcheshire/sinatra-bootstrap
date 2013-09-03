@@ -120,7 +120,7 @@ h1 {
   margin: 0 0 0.4em 0;
   color: #028fd7;
   font: bold 3.75em/1 Helvetica, Arial, "Nimbus Sans L", "Liberation Sans", sans-serif;
-  letter-spacing: -0.075em;
+  letter-spacing: -0.05em;
 }
 
 /* line 42, ../../views/stylesheets/_global.scss */
@@ -129,14 +129,14 @@ h2, legend {
   padding: 11px 0 0 0;
   color: #014c72;
   font: 300 2.25em/1 Helvetica, Arial, "Nimbus Sans L", "Liberation Sans", sans-serif;
-  letter-spacing: -0.075em;
+  letter-spacing: -0.05em;
 }
 
 /* line 50, ../../views/stylesheets/_global.scss */
 h3 {
   margin: 0 0 0.41667em 0;
   color: #014c72;
-  font: 300 1.5em/1 Helvetica, Arial, "Nimbus Sans L", "Liberation Sans", sans-serif;
+  font: 300 1.5em/1.1 Helvetica, Arial, "Nimbus Sans L", "Liberation Sans", sans-serif;
 }
 
 /* line 56, ../../views/stylesheets/_global.scss */
@@ -553,12 +553,12 @@ button, input[type='submit'], input[type='button'], .button {
   box-shadow: 0 0.125em 0.25em rgba(0, 0, 0, 0.25);
   background-color: #004978;
 }
-/* line 97, ../../views/stylesheets/_mixins.scss */
+/* line 42, ../../views/stylesheets/_mixins.scss */
 button:hover, input[type='submit']:hover, input[type='button']:hover, .button:hover {
   background: #0068ab;
   color: #fff;
 }
-/* line 101, ../../views/stylesheets/_mixins.scss */
+/* line 46, ../../views/stylesheets/_mixins.scss */
 button:active, input[type='submit']:active, input[type='button']:active, .button:active {
   background: #002a45;
   box-shadow: 0 0.125em 0.25em rgba(0, 0, 0, 0.25), inset 0 0.125em 0.25em rgba(0, 0, 0, 0.25);

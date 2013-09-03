@@ -1,2 +1,3 @@
-web: rerun 'unicorn -p 3456'
+# web: rerun 'unicorn -p 3456'
+web: shotgun -p 3456
 resque: rake styles:watch

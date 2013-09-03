@@ -13,6 +13,7 @@ gem 'rspec'
 gem 'capybara'
 
 group :development,:test do
+  gem 'shotgun'
   gem 'sinatra-compass'
   gem 'foreman'
   gem 'rerun'

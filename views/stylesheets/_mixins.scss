@@ -1,69 +1,18 @@
-$fix-mqs: false !default;
-
-@mixin respond-min($width) {
-  @if $fix-mqs {
-    @if $fix-mqs >= $width {
-      @content;  
-    }
-  }
-  @else {
-    @media screen and (min-width: $width) {
-      @content;
-    }
-  }
-}
-@mixin respond-max($width) {
-  @if $fix-mqs {
-    @if $fix-mqs < $width {
-      @content;  
-    }
-  }
-  @else {
-    @media screen and (max-width: $width) {
-      @content;
-    }
-  }
-}
-
-$old-ie: false !default;
-
-@mixin old-ie {
-  @if $old-ie {
-    @content;
-  }
-}
-
-@mixin flip($direction) {  
-  @if $direction == "vertical" {
-    -moz-transform: scaleY(-1);
-    -webkit-transform: scaleY(-1);
-    -o-transform: scaleY(-1);
-    transform: scaleY(-1);
-    -ms-filter: flipv; /*IE*/
-    filter: flipv; /*IE*/
-  } @else {
-    -moz-transform: scaleX(-1);
-    -webkit-transform: scaleX(-1);
-    -o-transform: scaleX(-1);
-    transform: scaleX(-1);
-    -ms-filter: fliph; /*IE*/
-    filter: fliph; /*IE*/
-  }
-}
+@import "utilities/keyframe_animations";
+@import "utilities/shapes";
+@import "utilities/responsive";
+@import "utilities/transforms";
+@import "utilities/typography";
+@import "utilities/forms";
 
 @mixin min-height($height) { 
   min-height: $height;
   height: auto !important;
   height: $height; 
 } 
-
-@function em($target, $context: $font-base) {
-   @if $target == 0 { @return 0 }
-   @return $target / $context + 0em;
-}
-
-@function lh($amount: 1, $context: $font-base) {
-   @return em($font-base-line-height * $amount, $context);
+@mixin size($width,$height:$width) {
+  width: $width;
+  height: $height;
 }
 
 @mixin middle-me($width:0,$height:0) {
@@ -85,10 +34,6 @@ $old-ie: false !default;
       -webkit-background-size: $width $height;
     }
   }
-}
-@mixin size($width,$height:$width) {
-  width: $width;
-  height: $height;
 }
 
 @mixin hover_button($color_main: #000, $color_hover:$color_main, $color_active:$color_main) {

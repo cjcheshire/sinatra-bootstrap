@@ -37,7 +37,7 @@ h1 {
   margin: 0 0 em(24px,$font_size) 0;
   color: $color_3;
   font: bold #{em($font_size)}/1 $heading_fontstack; 
-  letter-spacing: -0.075em;
+  letter-spacing: -0.05em;
 }
 h2 {
   $font_size: 36px;
@@ -45,13 +45,13 @@ h2 {
   padding: 11px 0 0 0;
   color: darken($color_3,20);
   font: 300 #{em($font_size)}/1 $heading_fontstack;
-  letter-spacing: -0.075em;
+  letter-spacing: -0.05em;
 }
 h3 {
   $font_size: 24px;
   margin: 0 0 em(10px,$font_size) 0;
   color: darken($color_3,20);
-  font: 300 #{em($font_size)}/1 $heading_fontstack;
+  font: 300 #{em($font_size)}/1.1 $heading_fontstack;
 }
 h4, h5, h6 {
   $font_size: 18px;
