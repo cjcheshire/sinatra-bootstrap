@@ -11,10 +11,11 @@ gem 'sinatra-advanced-routes'
 
 gem 'rspec'
 gem 'capybara'
+gem 'sinatra-compass'
+
 
 group :development,:test do
   gem 'shotgun'
-  gem 'sinatra-compass'
   gem 'foreman'
   gem 'rerun'
   gem 'unicorn'
