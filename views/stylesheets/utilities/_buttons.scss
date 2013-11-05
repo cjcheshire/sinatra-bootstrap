@@ -1,0 +1,12 @@
+@mixin hover_button($color_main: #000, $color_hover:$color_main, $color_active:$color_main) {
+  @content;
+  background-color: $color_main;
+  &:hover {
+    background: lighten($color_hover,10%);
+    color: #fff;
+  }
+  &:active {
+    background: darken($color_active,10%);
+    box-shadow: 0 em(2px) em(4px) rgba(0,0,0,0.25), inset 0 em(2px) em(4px) rgba(0,0,0,0.25);
+  }
+}

@@ -1,3 +1,12 @@
+@mixin font-face($family, $path) {
+  @font-face {
+    font-family: $family;
+    src: url('#{$path}.eot?') format('eot'), url('#{$path}.woff') format('woff'), url('#{$path}.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+}
+
 @function em($target, $context: $font-base) {
    @if $target == 0 { @return 0 }
    @return $target / $context + 0em;

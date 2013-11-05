@@ -1,32 +1,4 @@
-.hide {
-  @include hide-text();
-}
-
-/* ============================================================
-    Sections
-============================================================ */
-
-.clearfix {
-  @include clearfix;
-}
-
-body, body * {
-  @include box-sizing(border-box);
-//  border: 1px solid rgba(255,0,0,0.5);
-}
-
-body {
-  margin: 0 auto;
-  padding: 0; /* Temporary */
-  color: $color_default_text;
-  font: #{$font-base}/lh(1) $para_fontstack;
-  -webkit-font-smoothing: antialiased;
-  text-rendering: optimizeLegibility;
-  -webkit-text-size-adjust: 100%;
-  background: $color_background;
-}
-
-nav { 
+nav {
   ul {
     list-style: none;
   }
@@ -36,7 +8,7 @@ h1 {
   $font_size: 60px;
   margin: 0 0 em(24px,$font_size) 0;
   color: $color_3;
-  font: bold #{em($font_size)}/1 $heading_fontstack; 
+  font: bold #{em($font_size)}/1 $heading_fontstack;
   letter-spacing: -0.05em;
 }
 h2 {
@@ -61,9 +33,6 @@ h4, h5, h6 {
 }
 
 
-/* ============================================================
-    Grouping content
-============================================================ */
 p, pre, ol, ul, dl, figure, figcaption, table, fieldset {
   margin: 0 0 $margin_default 0;
 }
@@ -96,7 +65,7 @@ blockquote {
   color: $color_3;
   border-left: 0.25em solid $color_borders;
   margin: em(17px) 0 em(25px) 0;
-  padding: 0 em(25px) 0 1.334em;  
+  padding: 0 em(25px) 0 1.334em;
   p {
     line-height: 1.6;
     margin: em(9px) 0;
@@ -148,14 +117,12 @@ figure {
 
 .example {
   outline: 1px solid #EEE;
-  margin: $margin_default 0 em(16px) 0;
+  margin: $margin_default 0 $margin_default 0;
   padding: em(8px) em(16px) em(12px) em(16px);
 }
 
 
-/* ============================================================
-    Text-level semantics
-============================================================ */
+
 a {
   color: $color_3;
   font-size: 100%;
@@ -190,8 +157,8 @@ q {
 }
 
 small {
-    font-size: em(14px); /* 14px */
-    line-height: em(16px); /* em(16px) */
+  font-size: em(14px); /* 14px */
+  line-height: em(16px); /* em(16px) */
 }
 dfn[title] {
   border-bottom: 1px dotted rgba(0,0,0,0.2);
@@ -206,7 +173,7 @@ abbr {
 time {
   color: lighten($color_4,50%);
   font-family: arial ,sans-serif;
-  font-size: em(12px); 
+  font-size: em(12px);
   line-height: em(16px);
   text-transform: uppercase;
 }
@@ -225,8 +192,8 @@ code {
     background: #F0F0F0;
     margin: 0 0 -1px 0;
     border-top: 1px solid white;
-    padding: 0 0.5em;    
-  }  
+    padding: 0 0.5em;
+  }
   .tab1 {
     padding-left: 4ex;
   }
@@ -236,7 +203,7 @@ kbd {
   padding: em(5px) em(6px);
   background-color: lighten($color_3,60%);
   color: darken($color_3,20%);
-  font: normal #{em(14px)}/90% sans-serif; 
+  font: normal #{em(14px)}/90% sans-serif;
   border: 1px solid lighten($color_3,50%);
   @include border-radius(4px);
   @include background-clip(padding-box);
@@ -252,9 +219,8 @@ sup {
   vertical-align: super;
 }
 
-/* ============================================================
-    Edits
-============================================================ */
+
+
 mark, ins {
   color: $color_4;
   background-color: lighten($color_3,20%);
@@ -265,9 +231,7 @@ del {
 }
 
 
-/* ============================================================
-    Tabular data
-============================================================ */
+
 table {
   border-collapse: collapse;
   border-spacing: 0;
@@ -286,119 +250,4 @@ th {
 }
 td {
   vertical-align: top;
-}
-
-
-/* ============================================================
-    Forms
-============================================================ */
-
-legend {
-  @extend h2;
-  padding-bottom: em(8px);
-}
-.field {
-  width: 100%;
-  @include respond-min(em(480px)) {
-    width: 50%;
-    &.small {
-      width: em(80px);
-    }
-    &.medium {
-      width: em(240px);
-    }
-    &.large {
-      width: em(320px);
-    }
-  }
-  padding: em(6px) em(8px);
-  background-color: lighten($color_4,88%);
-  border: 1px solid lighten($color_4,60%);
-  box-shadow: inset 0 0.05em 0.65em rgba(0,0,0,0.055);
-  font: #{em(16px)}/1.5 sans-serif;
-}
-label {
-  display: block;
-  margin: 0 0 4px 0;
-  font-weight: 400;
-  line-height: 1.5;
-  @include respond-min($super-desktop) {
-    float: left;
-    width: 20%;
-  }
-  &.check {
-    font-weight: normal;
-    float: none;
-  }
-}
-input[type="radio"],input[type="checkbox"] {
-  margin-right: em(8px);
-}
-fieldset {
-  div {
-    margin: 0 0 em(16px) 0;
-  }
-  abbr[title="Required"] {
-    color: #900;
-    font:normal #{em(20px)}/0.1 sans-serif;
-    border-bottom: 0 none;
-  }
-  em {
-    display: block;
-    margin: 4px 0 0 0;
-    @include respond-min($super-desktop) {
-      margin-left: 20%;
-    }
-    color: lighten($color_4,25%);
-    font-family: sans-serif;
-    font-style: normal;
-    font-size: em(14px); 
-    line-height: em(16px); 
-  }
-  &.options {
-    clear: left;
-    ul {
-      margin: em(4px) 0;
-      @include respond-min($super-desktop) {
-        margin-left: 20%;
-      }
-      list-style: none;
-      li {
-        margin-left: 0;
-      }
-      label {
-        float: none;
-        width: auto;
-        font-weight: normal;
-      }
-    }
-  }
-}
-.submit {
-  padding: $margin_default 0 0 0;
-}
-
-#container {
-  margin: 0 auto;
-}
-
-/* ============================================================
-    Buttons
-============================================================ */
-
-button, input[type='submit'], input[type='button'], .button, a {
-  @include single-transition(all, 0.05s, ease-in-out);
-}
-button, input[type='submit'], input[type='button'], .button {
-  @include hover_button($color_1) {
-    -webkit-appearance: none;
-    display: inline-block;
-    padding: em(13px) em(16px);
-    border: 0;
-    font: normal 1.2em/1 $para_fontstack;
-    color: #fff;
-    cursor: pointer;
-    border-radius: 4px;
-    box-shadow: 0 em(2px) em(4px) rgba(0,0,0,0.25);
-  }
 }

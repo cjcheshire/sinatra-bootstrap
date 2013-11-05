@@ -1,0 +1,20 @@
+@mixin min-height($height) {
+  min-height: $height;
+  height: auto !important;
+  height: $height;
+}
+
+@mixin size($width,$height:$width) {
+  width: $width;
+  height: $height;
+}
+
+@mixin middle-me($width:0,$height:0) {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 10;
+  margin: (-($height/2)) 0 0 (-($width/2));
+  width: $width;
+  height: $height;
+}

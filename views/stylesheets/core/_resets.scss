@@ -1,0 +1,27 @@
+.hide {
+  @include hide-text();
+}
+
+/* ============================================================
+    Sections
+============================================================ */
+
+.clearfix {
+  @include clearfix;
+}
+
+body, body * {
+  @include box-sizing(border-box);
+  //  border: 1px solid rgba(255,0,0,0.5);
+}
+
+body {
+  margin: 0 auto;
+  padding: 0; /* Temporary */
+  color: $color_default_text;
+  font: #{$font-base}/lh(1) $para_fontstack;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  -webkit-text-size-adjust: 100%;
+  background: $color_background;
+}
