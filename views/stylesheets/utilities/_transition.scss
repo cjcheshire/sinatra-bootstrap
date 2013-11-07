@@ -1,0 +1,5 @@
+//@import "toolkit";
+
+@mixin single-transition($property, $duration, $function, $delay: 0s) {
+  @include transition($property, $duration, $function, $delay);
+}
