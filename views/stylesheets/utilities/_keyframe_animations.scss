@@ -14,24 +14,35 @@
   } 
 }
 
-@mixin animation($delay, $duration, $animation) {
+@mixin animation($animation) {
+  -webkit-animation: $animation;
+  -moz-animation: $animation;
+  -o-animation: $animation;
+  animation: $animation;
+}
+
+@mixin animation-seperate($animation, $delay, $duration, $count: 1, $mode: forwards) {
   -webkit-animation-delay: $delay;
   -webkit-animation-duration: $duration;
   -webkit-animation-name: $animation;
-  -webkit-animation-fill-mode: forwards; 
+  -webkit-animation-fill-mode: $mode;
+  -webkit-animation-iteration-count: $count;
 
   -moz-animation-delay: $delay;
   -moz-animation-duration: $duration;
   -moz-animation-name: $animation;
-  -moz-animation-fill-mode: forwards; 
+  -moz-animation-fill-mode: $mode;
+  -moz-animation-iteration-count: $count;
 
   -o-animation-delay: $delay;
   -o-animation-duration: $duration;
   -o-animation-name: $animation;
-  -o-animation-fill-mode: forwards; 
+  -o-animation-fill-mode: $mode;
+  -o-animation-iteration-count: $count;
 
   animation-delay: $delay;
   animation-duration: $duration;
   animation-name: $animation;
-  animation-fill-mode: forwards; 
+  animation-fill-mode: $mode;
+  animation-iteration-count: $count;
 }
